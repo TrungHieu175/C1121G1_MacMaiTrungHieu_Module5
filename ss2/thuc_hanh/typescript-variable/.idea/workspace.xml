@@ -1,401 +1,63 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="915b60c6-3e32-4ee9-bfe6-67f41d303c02" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../../../case_study/prototype_customer/createCustomer.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../case_study/prototype_customer/css/main.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../case_study/prototype_customer/css/util.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../case_study/prototype_customer/fonts/Lato/Lato-Black.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../case_study/prototype_customer/fonts/Lato/Lato-BlackItalic.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../case_study/prototype_customer/fonts/Lato/Lato-Bold.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../case_study/prototype_customer/fonts/Lato/Lato-BoldItalic.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../case_study/prototype_customer/fonts/Lato/Lato-Hairline.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../case_study/prototype_customer/fonts/Lato/Lato-HairlineItalic.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../case_study/prototype_customer/fonts/Lato/Lato-Italic.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../case_study/prototype_customer/fonts/Lato/Lato-Light.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../case_study/prototype_customer/fonts/Lato/Lato-LightItalic.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../case_study/prototype_customer/fonts/Lato/Lato-Regular.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../case_study/prototype_customer/fonts/Lato/OFL.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../case_study/prototype_customer/fonts/OpenSans/OpenSans-Bold.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../case_study/prototype_customer/fonts/OpenSans/OpenSans-BoldItalic.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../case_study/prototype_customer/fonts/OpenSans/OpenSans-ExtraBold.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../case_study/prototype_customer/fonts/OpenSans/OpenSans-ExtraBoldItalic.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../case_study/prototype_customer/fonts/OpenSans/OpenSans-Italic.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../case_study/prototype_customer/fonts/OpenSans/OpenSans-Light.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../case_study/prototype_customer/fonts/OpenSans/OpenSans-LightItalic.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../case_study/prototype_customer/fonts/OpenSans/OpenSans-Regular.otf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../case_study/prototype_customer/fonts/OpenSans/OpenSans-Regular.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../case_study/prototype_customer/fonts/OpenSans/OpenSans-SemiBold.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../case_study/prototype_customer/fonts/OpenSans/OpenSans-SemiBoldItalic.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../case_study/prototype_customer/fonts/font-awesome-4.7.0/HELP-US-OUT.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../case_study/prototype_customer/fonts/font-awesome-4.7.0/css/font-awesome.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../case_study/prototype_customer/fonts/font-awesome-4.7.0/css/font-awesome.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../case_study/prototype_customer/fonts/font-awesome-4.7.0/fonts/FontAwesome.otf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../case_study/prototype_customer/fonts/font-awesome-4.7.0/fonts/fontawesome-webfont.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../case_study/prototype_customer/fonts/font-awesome-4.7.0/fonts/fontawesome-webfont.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../case_study/prototype_customer/fonts/font-awesome-4.7.0/fonts/fontawesome-webfont.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../case_study/prototype_customer/fonts/font-awesome-4.7.0/fonts/fontawesome-webfont.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../case_study/prototype_customer/fonts/font-awesome-4.7.0/fonts/fontawesome-webfont.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../case_study/prototype_customer/fonts/font-awesome-4.7.0/less/animated.less" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../case_study/prototype_customer/fonts/font-awesome-4.7.0/less/bordered-pulled.less" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../case_study/prototype_customer/fonts/font-awesome-4.7.0/less/core.less" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../case_study/prototype_customer/fonts/font-awesome-4.7.0/less/fixed-width.less" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../case_study/prototype_customer/fonts/font-awesome-4.7.0/less/font-awesome.less" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../case_study/prototype_customer/fonts/font-awesome-4.7.0/less/icons.less" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../case_study/prototype_customer/fonts/font-awesome-4.7.0/less/larger.less" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../case_study/prototype_customer/fonts/font-awesome-4.7.0/less/list.less" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../case_study/prototype_customer/fonts/font-awesome-4.7.0/less/mixins.less" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../case_study/prototype_customer/fonts/font-awesome-4.7.0/less/path.less" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../case_study/prototype_customer/fonts/font-awesome-4.7.0/less/rotated-flipped.less" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../case_study/prototype_customer/fonts/font-awesome-4.7.0/less/screen-reader.less" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../case_study/prototype_customer/fonts/font-awesome-4.7.0/less/stacked.less" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../case_study/prototype_customer/fonts/font-awesome-4.7.0/less/variables.less" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../case_study/prototype_customer/fonts/font-awesome-4.7.0/scss/_animated.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../case_study/prototype_customer/fonts/font-awesome-4.7.0/scss/_bordered-pulled.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../case_study/prototype_customer/fonts/font-awesome-4.7.0/scss/_core.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../case_study/prototype_customer/fonts/font-awesome-4.7.0/scss/_fixed-width.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../case_study/prototype_customer/fonts/font-awesome-4.7.0/scss/_icons.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../case_study/prototype_customer/fonts/font-awesome-4.7.0/scss/_larger.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../case_study/prototype_customer/fonts/font-awesome-4.7.0/scss/_list.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../case_study/prototype_customer/fonts/font-awesome-4.7.0/scss/_mixins.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../case_study/prototype_customer/fonts/font-awesome-4.7.0/scss/_path.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../case_study/prototype_customer/fonts/font-awesome-4.7.0/scss/_rotated-flipped.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../case_study/prototype_customer/fonts/font-awesome-4.7.0/scss/_screen-reader.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../case_study/prototype_customer/fonts/font-awesome-4.7.0/scss/_stacked.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../case_study/prototype_customer/fonts/font-awesome-4.7.0/scss/_variables.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../case_study/prototype_customer/fonts/font-awesome-4.7.0/scss/font-awesome.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../case_study/prototype_customer/fonts/montserrat/Montserrat-Black.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../case_study/prototype_customer/fonts/montserrat/Montserrat-BlackItalic.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../case_study/prototype_customer/fonts/montserrat/Montserrat-Bold.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../case_study/prototype_customer/fonts/montserrat/Montserrat-BoldItalic.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../case_study/prototype_customer/fonts/montserrat/Montserrat-ExtraBold.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../case_study/prototype_customer/fonts/montserrat/Montserrat-ExtraBoldItalic.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../case_study/prototype_customer/fonts/montserrat/Montserrat-ExtraLight.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../case_study/prototype_customer/fonts/montserrat/Montserrat-ExtraLightItalic.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../case_study/prototype_customer/fonts/montserrat/Montserrat-Italic.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../case_study/prototype_customer/fonts/montserrat/Montserrat-Light.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../case_study/prototype_customer/fonts/montserrat/Montserrat-LightItalic.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../case_study/prototype_customer/fonts/montserrat/Montserrat-Medium.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../case_study/prototype_customer/fonts/montserrat/Montserrat-MediumItalic.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../case_study/prototype_customer/fonts/montserrat/Montserrat-Regular.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../case_study/prototype_customer/fonts/montserrat/Montserrat-SemiBold.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../case_study/prototype_customer/fonts/montserrat/Montserrat-SemiBoldItalic.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../case_study/prototype_customer/fonts/montserrat/Montserrat-Thin.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../case_study/prototype_customer/fonts/montserrat/Montserrat-ThinItalic.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../case_study/prototype_customer/fonts/montserrat/OFL.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../case_study/prototype_customer/fonts/roboto/Roboto-Black.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../case_study/prototype_customer/fonts/roboto/Roboto-BlackItalic.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../case_study/prototype_customer/fonts/roboto/Roboto-Bold.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../case_study/prototype_customer/fonts/roboto/Roboto-BoldItalic.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../case_study/prototype_customer/fonts/roboto/Roboto-Italic.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../case_study/prototype_customer/fonts/roboto/Roboto-Light.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../case_study/prototype_customer/fonts/roboto/Roboto-LightItalic.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../case_study/prototype_customer/fonts/roboto/Roboto-Medium.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../case_study/prototype_customer/fonts/roboto/Roboto-MediumItalic.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../case_study/prototype_customer/fonts/roboto/Roboto-Regular.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../case_study/prototype_customer/fonts/roboto/Roboto-Thin.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../case_study/prototype_customer/fonts/roboto/Roboto-ThinItalic.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../case_study/prototype_customer/images/icons/favicon.ico" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../case_study/prototype_customer/js/main.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../case_study/prototype_customer/listCustomer.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../case_study/prototype_customer/updateCustomer.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../case_study/prototype_customer/vendor/animate/animate.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../case_study/prototype_customer/vendor/bootstrap/css/bootstrap-grid.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../case_study/prototype_customer/vendor/bootstrap/css/bootstrap-grid.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../case_study/prototype_customer/vendor/bootstrap/css/bootstrap-grid.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../case_study/prototype_customer/vendor/bootstrap/css/bootstrap-grid.min.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../case_study/prototype_customer/vendor/bootstrap/css/bootstrap-reboot.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../case_study/prototype_customer/vendor/bootstrap/css/bootstrap-reboot.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../case_study/prototype_customer/vendor/bootstrap/css/bootstrap-reboot.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../case_study/prototype_customer/vendor/bootstrap/css/bootstrap-reboot.min.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../case_study/prototype_customer/vendor/bootstrap/css/bootstrap.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../case_study/prototype_customer/vendor/bootstrap/css/bootstrap.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../case_study/prototype_customer/vendor/bootstrap/css/bootstrap.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../case_study/prototype_customer/vendor/bootstrap/css/bootstrap.min.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../case_study/prototype_customer/vendor/bootstrap/js/bootstrap.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../case_study/prototype_customer/vendor/bootstrap/js/bootstrap.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../case_study/prototype_customer/vendor/bootstrap/js/popper.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../case_study/prototype_customer/vendor/bootstrap/js/popper.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../case_study/prototype_customer/vendor/bootstrap/js/tooltip.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../case_study/prototype_customer/vendor/jquery/jquery-3.2.1.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../case_study/prototype_customer/vendor/perfect-scrollbar/perfect-scrollbar.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../case_study/prototype_customer/vendor/perfect-scrollbar/perfect-scrollbar.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../case_study/prototype_customer/vendor/select2/select2.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../case_study/prototype_customer/vendor/select2/select2.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../case_study/prototype_customer/vendor/select2/select2.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../case_study/prototype_customer/vendor/select2/select2.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../case_study/create.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../../case_study/prototype_service/create.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../case_study/css/assets/css/flex-slider.css" beforeDir="false" afterPath="$PROJECT_DIR$/../../../case_study/prototype_service/css/assets/css/flex-slider.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../case_study/css/assets/css/fontawesome.css" beforeDir="false" afterPath="$PROJECT_DIR$/../../../case_study/prototype_service/css/assets/css/fontawesome.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../case_study/css/assets/css/owl.css" beforeDir="false" afterPath="$PROJECT_DIR$/../../../case_study/prototype_service/css/assets/css/owl.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../case_study/css/assets/css/templatemo-sixteen.css" beforeDir="false" afterPath="$PROJECT_DIR$/../../../case_study/prototype_service/css/assets/css/templatemo-sixteen.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../case_study/css/assets/fonts/Flaticon.woff" beforeDir="false" afterPath="$PROJECT_DIR$/../../../case_study/prototype_service/css/assets/fonts/Flaticon.woff" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../case_study/css/assets/fonts/FontAwesome.otf" beforeDir="false" afterPath="$PROJECT_DIR$/../../../case_study/prototype_service/css/assets/fonts/FontAwesome.otf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../case_study/css/assets/fonts/flexslider-icon.eot" beforeDir="false" afterPath="$PROJECT_DIR$/../../../case_study/prototype_service/css/assets/fonts/flexslider-icon.eot" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../case_study/css/assets/fonts/flexslider-icon.svg" beforeDir="false" afterPath="$PROJECT_DIR$/../../../case_study/prototype_service/css/assets/fonts/flexslider-icon.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../case_study/css/assets/fonts/flexslider-icon.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/../../../case_study/prototype_service/css/assets/fonts/flexslider-icon.ttf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../case_study/css/assets/fonts/flexslider-icon.woff" beforeDir="false" afterPath="$PROJECT_DIR$/../../../case_study/prototype_service/css/assets/fonts/flexslider-icon.woff" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../case_study/css/assets/fonts/fontawesome-webfont.eot" beforeDir="false" afterPath="$PROJECT_DIR$/../../../case_study/prototype_service/css/assets/fonts/fontawesome-webfont.eot" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../case_study/css/assets/fonts/fontawesome-webfont.svg" beforeDir="false" afterPath="$PROJECT_DIR$/../../../case_study/prototype_service/css/assets/fonts/fontawesome-webfont.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../case_study/css/assets/fonts/fontawesome-webfont.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/../../../case_study/prototype_service/css/assets/fonts/fontawesome-webfont.ttf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../case_study/css/assets/fonts/fontawesome-webfont.woff" beforeDir="false" afterPath="$PROJECT_DIR$/../../../case_study/prototype_service/css/assets/fonts/fontawesome-webfont.woff" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../case_study/css/assets/fonts/fontawesome-webfont.woff2" beforeDir="false" afterPath="$PROJECT_DIR$/../../../case_study/prototype_service/css/assets/fonts/fontawesome-webfont.woff2" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../case_study/css/assets/fonts/slick.eot" beforeDir="false" afterPath="$PROJECT_DIR$/../../../case_study/prototype_service/css/assets/fonts/slick.eot" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../case_study/css/assets/fonts/slick.svg" beforeDir="false" afterPath="$PROJECT_DIR$/../../../case_study/prototype_service/css/assets/fonts/slick.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../case_study/css/assets/fonts/slick.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/../../../case_study/prototype_service/css/assets/fonts/slick.ttf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../case_study/css/assets/fonts/slick.woff" beforeDir="false" afterPath="$PROJECT_DIR$/../../../case_study/prototype_service/css/assets/fonts/slick.woff" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../case_study/css/assets/images/about-heading.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/../../../case_study/prototype_service/css/assets/images/about-heading.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../case_study/css/assets/images/client-01.png" beforeDir="false" afterPath="$PROJECT_DIR$/../../../case_study/prototype_service/css/assets/images/client-01.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../case_study/css/assets/images/contact-heading.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/../../../case_study/prototype_service/css/assets/images/contact-heading.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../case_study/css/assets/images/feature-image.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/../../../case_study/prototype_service/css/assets/images/feature-image.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../case_study/css/assets/images/more-info.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/../../../case_study/prototype_service/css/assets/images/more-info.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../case_study/css/assets/images/product_01.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/../../../case_study/prototype_service/css/assets/images/product_01.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../case_study/css/assets/images/product_02.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/../../../case_study/prototype_service/css/assets/images/product_02.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../case_study/css/assets/images/product_03.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/../../../case_study/prototype_service/css/assets/images/product_03.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../case_study/css/assets/images/product_04.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/../../../case_study/prototype_service/css/assets/images/product_04.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../case_study/css/assets/images/product_05.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/../../../case_study/prototype_service/css/assets/images/product_05.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../case_study/css/assets/images/product_06.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/../../../case_study/prototype_service/css/assets/images/product_06.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../case_study/css/assets/images/products-heading.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/../../../case_study/prototype_service/css/assets/images/products-heading.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../case_study/css/assets/images/services-bg.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/../../../case_study/prototype_service/css/assets/images/services-bg.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../case_study/css/assets/images/slide_01.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/../../../case_study/prototype_service/css/assets/images/slide_01.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../case_study/css/assets/images/slide_02.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/../../../case_study/prototype_service/css/assets/images/slide_02.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../case_study/css/assets/images/slide_03.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/../../../case_study/prototype_service/css/assets/images/slide_03.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../case_study/css/assets/images/team_01.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/../../../case_study/prototype_service/css/assets/images/team_01.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../case_study/css/assets/images/team_02.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/../../../case_study/prototype_service/css/assets/images/team_02.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../case_study/css/assets/images/team_03.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/../../../case_study/prototype_service/css/assets/images/team_03.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../case_study/css/assets/images/team_04.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/../../../case_study/prototype_service/css/assets/images/team_04.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../case_study/css/assets/images/team_05.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/../../../case_study/prototype_service/css/assets/images/team_05.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../case_study/css/assets/images/team_06.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/../../../case_study/prototype_service/css/assets/images/team_06.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../case_study/css/assets/js/accordions.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../../case_study/prototype_service/css/assets/js/accordions.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../case_study/css/assets/js/custom.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../../case_study/prototype_service/css/assets/js/custom.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../case_study/css/assets/js/isotope.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../../case_study/prototype_service/css/assets/js/isotope.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../case_study/css/assets/js/owl.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../../case_study/prototype_service/css/assets/js/owl.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../case_study/css/assets/js/slick.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../../case_study/prototype_service/css/assets/js/slick.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../case_study/css/vendor/bootstrap/css/bootstrap.css" beforeDir="false" afterPath="$PROJECT_DIR$/../../../case_study/prototype_service/css/vendor/bootstrap/css/bootstrap.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../case_study/css/vendor/bootstrap/css/bootstrap.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/../../../case_study/prototype_service/css/vendor/bootstrap/css/bootstrap.css.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../case_study/css/vendor/bootstrap/css/bootstrap.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/../../../case_study/prototype_service/css/vendor/bootstrap/css/bootstrap.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../case_study/css/vendor/bootstrap/css/bootstrap.min.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/../../../case_study/prototype_service/css/vendor/bootstrap/css/bootstrap.min.css.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../case_study/css/vendor/bootstrap/js/bootstrap.bundle.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../../case_study/prototype_service/css/vendor/bootstrap/js/bootstrap.bundle.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../case_study/css/vendor/bootstrap/js/bootstrap.bundle.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/../../../case_study/prototype_service/css/vendor/bootstrap/js/bootstrap.bundle.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../case_study/css/vendor/bootstrap/js/bootstrap.bundle.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../../case_study/prototype_service/css/vendor/bootstrap/js/bootstrap.bundle.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../case_study/css/vendor/bootstrap/js/bootstrap.bundle.min.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/../../../case_study/prototype_service/css/vendor/bootstrap/js/bootstrap.bundle.min.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../case_study/css/vendor/bootstrap/js/bootstrap.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../../case_study/prototype_service/css/vendor/bootstrap/js/bootstrap.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../case_study/css/vendor/bootstrap/js/bootstrap.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/../../../case_study/prototype_service/css/vendor/bootstrap/js/bootstrap.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../case_study/css/vendor/bootstrap/js/bootstrap.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../../case_study/prototype_service/css/vendor/bootstrap/js/bootstrap.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../case_study/css/vendor/bootstrap/js/bootstrap.min.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/../../../case_study/prototype_service/css/vendor/bootstrap/js/bootstrap.min.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../case_study/css/vendor/jquery/jquery.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../../case_study/prototype_service/css/vendor/jquery/jquery.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../case_study/css/vendor/jquery/jquery.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../../case_study/prototype_service/css/vendor/jquery/jquery.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../case_study/css/vendor/jquery/jquery.min.map" beforeDir="false" afterPath="$PROJECT_DIR$/../../../case_study/prototype_service/css/vendor/jquery/jquery.min.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../case_study/css/vendor/jquery/jquery.slim.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../../case_study/prototype_service/css/vendor/jquery/jquery.slim.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../case_study/css/vendor/jquery/jquery.slim.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../../case_study/prototype_service/css/vendor/jquery/jquery.slim.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../case_study/css/vendor/jquery/jquery.slim.min.map" beforeDir="false" afterPath="$PROJECT_DIR$/../../../case_study/prototype_service/css/vendor/jquery/jquery.slim.min.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../case_study/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../../case_study/prototype_service/home.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../case_study/update.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../../case_study/prototype_service/update.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.bin/tsc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.bin/tsc.cmd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.bin/tsc.ps1" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.bin/tsserver" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.bin/tsserver.cmd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.bin/tsserver.ps1" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/typescript/AUTHORS.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/typescript/CODE_OF_CONDUCT.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/typescript/CopyrightNotice.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/typescript/LICENSE.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/typescript/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/typescript/SECURITY.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/typescript/ThirdPartyNoticeText.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/typescript/bin/tsc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/typescript/bin/tsserver" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/typescript/lib/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/typescript/lib/cancellationToken.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/typescript/lib/cs/diagnosticMessages.generated.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/typescript/lib/de/diagnosticMessages.generated.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/typescript/lib/es/diagnosticMessages.generated.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/typescript/lib/fr/diagnosticMessages.generated.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/typescript/lib/it/diagnosticMessages.generated.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/typescript/lib/ja/diagnosticMessages.generated.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/typescript/lib/ko/diagnosticMessages.generated.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/typescript/lib/lib.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/typescript/lib/lib.dom.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/typescript/lib/lib.dom.iterable.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/typescript/lib/lib.es2015.collection.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/typescript/lib/lib.es2015.core.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/typescript/lib/lib.es2015.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/typescript/lib/lib.es2015.generator.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/typescript/lib/lib.es2015.iterable.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/typescript/lib/lib.es2015.promise.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/typescript/lib/lib.es2015.proxy.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/typescript/lib/lib.es2015.reflect.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/typescript/lib/lib.es2015.symbol.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/typescript/lib/lib.es2015.symbol.wellknown.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/typescript/lib/lib.es2016.array.include.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/typescript/lib/lib.es2016.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/typescript/lib/lib.es2016.full.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/typescript/lib/lib.es2017.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/typescript/lib/lib.es2017.full.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/typescript/lib/lib.es2017.intl.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/typescript/lib/lib.es2017.object.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/typescript/lib/lib.es2017.sharedmemory.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/typescript/lib/lib.es2017.string.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/typescript/lib/lib.es2017.typedarrays.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/typescript/lib/lib.es2018.asyncgenerator.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/typescript/lib/lib.es2018.asynciterable.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/typescript/lib/lib.es2018.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/typescript/lib/lib.es2018.full.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/typescript/lib/lib.es2018.intl.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/typescript/lib/lib.es2018.promise.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/typescript/lib/lib.es2018.regexp.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/typescript/lib/lib.es2019.array.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/typescript/lib/lib.es2019.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/typescript/lib/lib.es2019.full.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/typescript/lib/lib.es2019.object.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/typescript/lib/lib.es2019.string.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/typescript/lib/lib.es2019.symbol.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/typescript/lib/lib.es2020.bigint.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/typescript/lib/lib.es2020.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/typescript/lib/lib.es2020.full.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/typescript/lib/lib.es2020.intl.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/typescript/lib/lib.es2020.promise.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/typescript/lib/lib.es2020.sharedmemory.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/typescript/lib/lib.es2020.string.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/typescript/lib/lib.es2020.symbol.wellknown.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/typescript/lib/lib.es2021.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/typescript/lib/lib.es2021.full.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/typescript/lib/lib.es2021.intl.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/typescript/lib/lib.es2021.promise.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/typescript/lib/lib.es2021.string.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/typescript/lib/lib.es2021.weakref.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/typescript/lib/lib.es2022.array.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/typescript/lib/lib.es2022.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/typescript/lib/lib.es2022.error.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/typescript/lib/lib.es2022.full.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/typescript/lib/lib.es2022.object.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/typescript/lib/lib.es2022.string.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/typescript/lib/lib.es5.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/typescript/lib/lib.es6.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/typescript/lib/lib.esnext.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/typescript/lib/lib.esnext.full.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/typescript/lib/lib.esnext.intl.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/typescript/lib/lib.esnext.promise.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/typescript/lib/lib.esnext.string.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/typescript/lib/lib.esnext.weakref.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/typescript/lib/lib.scripthost.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/typescript/lib/lib.webworker.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/typescript/lib/lib.webworker.importscripts.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/typescript/lib/lib.webworker.iterable.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/typescript/lib/pl/diagnosticMessages.generated.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/typescript/lib/protocol.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/typescript/lib/pt-br/diagnosticMessages.generated.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/typescript/lib/ru/diagnosticMessages.generated.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/typescript/lib/tr/diagnosticMessages.generated.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/typescript/lib/tsc.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/typescript/lib/tsserver.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/typescript/lib/tsserverlibrary.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/typescript/lib/tsserverlibrary.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/typescript/lib/typesMap.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/typescript/lib/typescript.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/typescript/lib/typescript.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/typescript/lib/typescriptServices.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/typescript/lib/typescriptServices.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/typescript/lib/typingsInstaller.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/typescript/lib/watchGuard.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/typescript/lib/zh-cn/diagnosticMessages.generated.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/typescript/lib/zh-tw/diagnosticMessages.generated.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/typescript/loc/lcl/CHS/Targets/ProjectItemsSchema.xaml.lcl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/typescript/loc/lcl/CHS/Targets/TypeScriptCompile.xaml.lcl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/typescript/loc/lcl/CHS/Targets/TypeScriptProjectProperties.xaml.lcl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/typescript/loc/lcl/CHS/TypeScriptDebugEngine/TypeScriptDebugEngine.dll.lcl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/typescript/loc/lcl/CHS/TypeScriptLanguageService/Microsoft.CodeAnalysis.TypeScript.EditorFeatures.dll.lcl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/typescript/loc/lcl/CHS/TypeScriptTasks/TypeScript.Tasks.dll.lcl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/typescript/loc/lcl/CHT/Targets/ProjectItemsSchema.xaml.lcl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/typescript/loc/lcl/CHT/Targets/TypeScriptCompile.xaml.lcl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/typescript/loc/lcl/CHT/Targets/TypeScriptProjectProperties.xaml.lcl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/typescript/loc/lcl/CHT/TypeScriptDebugEngine/TypeScriptDebugEngine.dll.lcl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/typescript/loc/lcl/CHT/TypeScriptLanguageService/Microsoft.CodeAnalysis.TypeScript.EditorFeatures.dll.lcl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/typescript/loc/lcl/CHT/TypeScriptTasks/TypeScript.Tasks.dll.lcl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/typescript/loc/lcl/CSY/Targets/ProjectItemsSchema.xaml.lcl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/typescript/loc/lcl/CSY/Targets/TypeScriptCompile.xaml.lcl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/typescript/loc/lcl/CSY/Targets/TypeScriptProjectProperties.xaml.lcl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/typescript/loc/lcl/CSY/TypeScriptDebugEngine/TypeScriptDebugEngine.dll.lcl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/typescript/loc/lcl/CSY/TypeScriptLanguageService/Microsoft.CodeAnalysis.TypeScript.EditorFeatures.dll.lcl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/typescript/loc/lcl/CSY/TypeScriptTasks/TypeScript.Tasks.dll.lcl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/typescript/loc/lcl/DEU/Targets/ProjectItemsSchema.xaml.lcl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/typescript/loc/lcl/DEU/Targets/TypeScriptCompile.xaml.lcl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/typescript/loc/lcl/DEU/Targets/TypeScriptProjectProperties.xaml.lcl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/typescript/loc/lcl/DEU/TypeScriptDebugEngine/TypeScriptDebugEngine.dll.lcl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/typescript/loc/lcl/DEU/TypeScriptLanguageService/Microsoft.CodeAnalysis.TypeScript.EditorFeatures.dll.lcl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/typescript/loc/lcl/DEU/TypeScriptTasks/TypeScript.Tasks.dll.lcl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/typescript/loc/lcl/ESN/Targets/ProjectItemsSchema.xaml.lcl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/typescript/loc/lcl/ESN/Targets/TypeScriptCompile.xaml.lcl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/typescript/loc/lcl/ESN/Targets/TypeScriptProjectProperties.xaml.lcl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/typescript/loc/lcl/ESN/TypeScriptDebugEngine/TypeScriptDebugEngine.dll.lcl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/typescript/loc/lcl/ESN/TypeScriptLanguageService/Microsoft.CodeAnalysis.TypeScript.EditorFeatures.dll.lcl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/typescript/loc/lcl/ESN/TypeScriptTasks/TypeScript.Tasks.dll.lcl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/typescript/loc/lcl/FRA/Targets/ProjectItemsSchema.xaml.lcl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/typescript/loc/lcl/FRA/Targets/TypeScriptCompile.xaml.lcl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/typescript/loc/lcl/FRA/Targets/TypeScriptProjectProperties.xaml.lcl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/typescript/loc/lcl/FRA/TypeScriptDebugEngine/TypeScriptDebugEngine.dll.lcl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/typescript/loc/lcl/FRA/TypeScriptLanguageService/Microsoft.CodeAnalysis.TypeScript.EditorFeatures.dll.lcl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/typescript/loc/lcl/FRA/TypeScriptTasks/TypeScript.Tasks.dll.lcl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/typescript/loc/lcl/ITA/Targets/ProjectItemsSchema.xaml.lcl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/typescript/loc/lcl/ITA/Targets/TypeScriptCompile.xaml.lcl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/typescript/loc/lcl/ITA/Targets/TypeScriptProjectProperties.xaml.lcl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/typescript/loc/lcl/ITA/TypeScriptDebugEngine/TypeScriptDebugEngine.dll.lcl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/typescript/loc/lcl/ITA/TypeScriptLanguageService/Microsoft.CodeAnalysis.TypeScript.EditorFeatures.dll.lcl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/typescript/loc/lcl/ITA/TypeScriptTasks/TypeScript.Tasks.dll.lcl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/typescript/loc/lcl/JPN/Targets/ProjectItemsSchema.xaml.lcl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/typescript/loc/lcl/JPN/Targets/TypeScriptCompile.xaml.lcl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/typescript/loc/lcl/JPN/Targets/TypeScriptProjectProperties.xaml.lcl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/typescript/loc/lcl/JPN/TypeScriptDebugEngine/TypeScriptDebugEngine.dll.lcl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/typescript/loc/lcl/JPN/TypeScriptLanguageService/Microsoft.CodeAnalysis.TypeScript.EditorFeatures.dll.lcl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/typescript/loc/lcl/JPN/TypeScriptTasks/TypeScript.Tasks.dll.lcl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/typescript/loc/lcl/KOR/Targets/ProjectItemsSchema.xaml.lcl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/typescript/loc/lcl/KOR/Targets/TypeScriptCompile.xaml.lcl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/typescript/loc/lcl/KOR/Targets/TypeScriptProjectProperties.xaml.lcl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/typescript/loc/lcl/KOR/TypeScriptDebugEngine/TypeScriptDebugEngine.dll.lcl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/typescript/loc/lcl/KOR/TypeScriptLanguageService/Microsoft.CodeAnalysis.TypeScript.EditorFeatures.dll.lcl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/typescript/loc/lcl/KOR/TypeScriptTasks/TypeScript.Tasks.dll.lcl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/typescript/loc/lcl/PLK/Targets/ProjectItemsSchema.xaml.lcl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/typescript/loc/lcl/PLK/Targets/TypeScriptCompile.xaml.lcl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/typescript/loc/lcl/PLK/Targets/TypeScriptProjectProperties.xaml.lcl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/typescript/loc/lcl/PLK/TypeScriptDebugEngine/TypeScriptDebugEngine.dll.lcl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/typescript/loc/lcl/PLK/TypeScriptLanguageService/Microsoft.CodeAnalysis.TypeScript.EditorFeatures.dll.lcl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/typescript/loc/lcl/PLK/TypeScriptTasks/TypeScript.Tasks.dll.lcl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/typescript/loc/lcl/PTB/Targets/ProjectItemsSchema.xaml.lcl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/typescript/loc/lcl/PTB/Targets/TypeScriptCompile.xaml.lcl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/typescript/loc/lcl/PTB/Targets/TypeScriptProjectProperties.xaml.lcl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/typescript/loc/lcl/PTB/TypeScriptDebugEngine/TypeScriptDebugEngine.dll.lcl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/typescript/loc/lcl/PTB/TypeScriptLanguageService/Microsoft.CodeAnalysis.TypeScript.EditorFeatures.dll.lcl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/typescript/loc/lcl/PTB/TypeScriptTasks/TypeScript.Tasks.dll.lcl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/typescript/loc/lcl/RUS/Targets/ProjectItemsSchema.xaml.lcl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/typescript/loc/lcl/RUS/Targets/TypeScriptCompile.xaml.lcl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/typescript/loc/lcl/RUS/Targets/TypeScriptProjectProperties.xaml.lcl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/typescript/loc/lcl/RUS/TypeScriptDebugEngine/TypeScriptDebugEngine.dll.lcl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/typescript/loc/lcl/RUS/TypeScriptLanguageService/Microsoft.CodeAnalysis.TypeScript.EditorFeatures.dll.lcl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/typescript/loc/lcl/RUS/TypeScriptTasks/TypeScript.Tasks.dll.lcl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/typescript/loc/lcl/TRK/Targets/ProjectItemsSchema.xaml.lcl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/typescript/loc/lcl/TRK/Targets/TypeScriptCompile.xaml.lcl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/typescript/loc/lcl/TRK/Targets/TypeScriptProjectProperties.xaml.lcl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/typescript/loc/lcl/TRK/TypeScriptDebugEngine/TypeScriptDebugEngine.dll.lcl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/typescript/loc/lcl/TRK/TypeScriptLanguageService/Microsoft.CodeAnalysis.TypeScript.EditorFeatures.dll.lcl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/typescript/loc/lcl/TRK/TypeScriptTasks/TypeScript.Tasks.dll.lcl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/typescript/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tsconfig.json" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/index.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/typescript-control-flow-and-loop.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/typescript-iarea.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/typescript-is-prime.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/typescript-promise.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/typescript-rectangle.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/typescript-shape.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/typescript-variable.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tsconfig.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../case_study/prototype_customer/updateCustomer.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../../case_study/prototype_customer/updateCustomer.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../case_study/prototype_service/update.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../../case_study/prototype_service/update.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="TypeScript File" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="28ppSilV6rrpTV66cwWDP1OZZlO" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -405,6 +67,9 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="prettierjs.PrettierConfiguration.Package" value="D:\CodeGym\Module_5\C1121G1_MacMaiTrungHieu_Module5\ss2\thuc_hanh\typescript-variable\node_modules\prettier" />
+    <property name="ts.external.directory.path" value="D:\CodeGym\Module_5\C1121G1_MacMaiTrungHieu_Module5\ss2\thuc_hanh\typescript-variable\node_modules\typescript\lib" />
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -416,11 +81,39 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1651923382823</updated>
-      <workItem from="1651923384280" duration="597000" />
+      <workItem from="1651923384280" duration="1246000" />
+      <workItem from="1652000608674" duration="3902000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="2" />
+    <option name="exactExcludedFiles">
+      <list>
+        <option value="$PROJECT_DIR$/src/typescript-control-flow-and-loop.js" />
+        <option value="$PROJECT_DIR$/src/typescript-is-prime.js" />
+      </list>
+    </option>
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="418" y="250" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1652001494424">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="418" y="250" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1536.864@0.0.1536.864" timestamp="1652001494424" />
+    <state x="549" y="187" key="FileChooserDialogImpl" timestamp="1652000604828">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="549" y="187" key="FileChooserDialogImpl/0.0.1536.864@0.0.1536.864" timestamp="1652000604828" />
   </component>
 </project>
