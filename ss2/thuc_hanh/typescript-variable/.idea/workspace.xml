@@ -36,8 +36,6 @@
       <change afterPath="$PROJECT_DIR$/src/typescript-shape.ts" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/typescript-variable.ts" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/tsconfig.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../case_study/prototype_customer/updateCustomer.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../../case_study/prototype_customer/updateCustomer.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../case_study/prototype_service/update.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../../case_study/prototype_service/update.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

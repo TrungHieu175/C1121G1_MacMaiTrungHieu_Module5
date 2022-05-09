@@ -1,1 +1,7 @@
-<p>color-picker works!</p>
+<div class="test" [ngStyle]="rgb()"></div>
+<div>
+  <label>Enter color:</label>
+  <input type="range" min="0" max="255" value="0" [(ngModel)]="r">
+  <input type="range" min="0" max="255" value="0" [(ngModel)]="g">
+  <input type="range" min="0" max="255" value="0" [(ngModel)]="b">
+</div>
