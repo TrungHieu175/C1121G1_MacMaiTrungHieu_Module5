@@ -33,15 +33,15 @@
           <a href="products.html">View all room<i class="fa fa-angle-right"></i></a>
         </div>
       </div>
-      <div class="col-md-4">
+      <div class="col-md-4" *ngFor="let facility of facilitys">
         <div class="product-item">
           <a href="#"><img
-            src="https://furamavietnam.com/wp-content/uploads/2018/03/Vietnam_Danang_Furama_Lagoon-Superior-twin-bed-F-370x239.jpg"
+            src="{{facility.serviceImg}}"
             alt=""></a>
           <div class="down-content">
-            <a href="#"><h4>DELUXE ROOM</h4></a>
-            <h6>$25.75</h6>
-            <p>Area room: 40.1 m<sup>2</sup>.</p>
+            <a href="#"><h4>{{facility.serviceName}}</h4></a>
+            <h6>{{facility.servicePrice}}</h6>
+            <p>{{facility.serviceArea}}<sup>2</sup>.</p>
             <ul class="stars">
               <li><i class="fa fa-star"></i></li>
               <li><i class="fa fa-star"></i></li>
@@ -53,106 +53,106 @@
           </div>
         </div>
       </div>
-      <div class="col-md-4">
-        <div class="product-item">
-          <a href="#"><img
-            src="https://furamavietnam.com/wp-content/uploads/2018/03/Vietnam_Danang_Furama_Ocean-Deluxe-double-bed-F-370x239.jpg"
-            alt=""></a>
-          <div class="down-content">
-            <a href="#"><h4>STUDIO SUITE ROOM</h4></a>
-            <h6>$30.25</h6>
-            <p>Area room: 42.4 m<sup>2</sup>.</p>
-            <ul class="stars">
-              <li><i class="fa fa-star"></i></li>
-              <li><i class="fa fa-star"></i></li>
-              <li><i class="fa fa-star"></i></li>
-              <li><i class="fa fa-star"></i></li>
-              <li><i class="fa fa-star"></i></li>
-            </ul>
-            <span>Reviews (21)</span>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-4">
-        <div class="product-item">
-          <a href="#"><img
-            src="https://furamavietnam.com/wp-content/uploads/2018/08/Vietnam_Danang_Furama_Garden-Deluxe-twin-bed-F-370x239.jpg"
-            alt=""></a>
-          <div class="down-content">
-            <a href="#"><h4>SUITE ROOM</h4></a>
-            <h6>$20.45</h6>
-            <p>Area room: 43.5 m<sup>2</sup>.</p>
-            <ul class="stars">
-              <li><i class="fa fa-star"></i></li>
-              <li><i class="fa fa-star"></i></li>
-              <li><i class="fa fa-star"></i></li>
-              <li><i class="fa fa-star"></i></li>
-              <li><i class="fa fa-star"></i></li>
-            </ul>
-            <span>Reviews (36)</span>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-4">
-        <div class="product-item">
-          <a href="#"><img
-            src="https://furamavietnam.com/wp-content/uploads/2018/03/Vietnam_Danang_Furama_Garden-Superior-TwinBed-1-F-370x239.jpg"
-            alt=""></a>
-          <div class="down-content">
-            <a href="#"><h4>SUPERIOR ROOM</h4></a>
-            <h6>$15.25</h6>
-            <p>Area room: 42.1 m<sup>2</sup>.</p>
-            <ul class="stars">
-              <li><i class="fa fa-star"></i></li>
-              <li><i class="fa fa-star"></i></li>
-              <li><i class="fa fa-star"></i></li>
-              <li><i class="fa fa-star"></i></li>
-              <li><i class="fa fa-star"></i></li>
-            </ul>
-            <span>Reviews (48)</span>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-4">
-        <div class="product-item">
-          <a href="#"><img
-            src="https://furamavietnam.com/wp-content/uploads/2018/03/Vietnam_Danang_Furama_Ocean-Suite-Feature-370x239.jpg"
-            alt=""></a>
-          <div class="down-content">
-            <a href="#"><h4>SUPERIOR LAKE VIEW</h4></a>
-            <h6>$12.50</h6>
-            <p>Area room: 42.1 m<sup>2</sup>.</p>
-            <ul class="stars">
-              <li><i class="fa fa-star"></i></li>
-              <li><i class="fa fa-star"></i></li>
-              <li><i class="fa fa-star"></i></li>
-              <li><i class="fa fa-star"></i></li>
-              <li><i class="fa fa-star"></i></li>
-            </ul>
-            <span>Reviews (16)</span>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-4">
-        <div class="product-item">
-          <a href="#"><img
-            src="https://furamavietnam.com/wp-content/uploads/2018/03/Vietnam_Danang_Furama_Ocean-Studio-Suite-F-370x239.jpg"
-            alt=""></a>
-          <div class="down-content">
-            <a href="#"><h4>DELUXE LAKE VIEW</h4></a>
-            <h6>$22.50</h6>
-            <p>Area room: 56 m<sup>2</sup>.</p>
-            <ul class="stars">
-              <li><i class="fa fa-star"></i></li>
-              <li><i class="fa fa-star"></i></li>
-              <li><i class="fa fa-star"></i></li>
-              <li><i class="fa fa-star"></i></li>
-              <li><i class="fa fa-star"></i></li>
-            </ul>
-            <span>Reviews (32)</span>
-          </div>
-        </div>
-      </div>
+<!--      <div class="col-md-4">-->
+<!--        <div class="product-item">-->
+<!--          <a href="#"><img-->
+<!--            src="https://furamavietnam.com/wp-content/uploads/2018/03/Vietnam_Danang_Furama_Ocean-Deluxe-double-bed-F-370x239.jpg"-->
+<!--            alt=""></a>-->
+<!--          <div class="down-content">-->
+<!--            <a href="#"><h4>STUDIO SUITE ROOM</h4></a>-->
+<!--            <h6>$30.25</h6>-->
+<!--            <p>Area room: 42.4 m<sup>2</sup>.</p>-->
+<!--            <ul class="stars">-->
+<!--              <li><i class="fa fa-star"></i></li>-->
+<!--              <li><i class="fa fa-star"></i></li>-->
+<!--              <li><i class="fa fa-star"></i></li>-->
+<!--              <li><i class="fa fa-star"></i></li>-->
+<!--              <li><i class="fa fa-star"></i></li>-->
+<!--            </ul>-->
+<!--            <span>Reviews (21)</span>-->
+<!--          </div>-->
+<!--        </div>-->
+<!--      </div>-->
+<!--      <div class="col-md-4">-->
+<!--        <div class="product-item">-->
+<!--          <a href="#"><img-->
+<!--            src="https://furamavietnam.com/wp-content/uploads/2018/08/Vietnam_Danang_Furama_Garden-Deluxe-twin-bed-F-370x239.jpg"-->
+<!--            alt=""></a>-->
+<!--          <div class="down-content">-->
+<!--            <a href="#"><h4>SUITE ROOM</h4></a>-->
+<!--            <h6>$20.45</h6>-->
+<!--            <p>Area room: 43.5 m<sup>2</sup>.</p>-->
+<!--            <ul class="stars">-->
+<!--              <li><i class="fa fa-star"></i></li>-->
+<!--              <li><i class="fa fa-star"></i></li>-->
+<!--              <li><i class="fa fa-star"></i></li>-->
+<!--              <li><i class="fa fa-star"></i></li>-->
+<!--              <li><i class="fa fa-star"></i></li>-->
+<!--            </ul>-->
+<!--            <span>Reviews (36)</span>-->
+<!--          </div>-->
+<!--        </div>-->
+<!--      </div>-->
+<!--      <div class="col-md-4">-->
+<!--        <div class="product-item">-->
+<!--          <a href="#"><img-->
+<!--            src="https://furamavietnam.com/wp-content/uploads/2018/03/Vietnam_Danang_Furama_Garden-Superior-TwinBed-1-F-370x239.jpg"-->
+<!--            alt=""></a>-->
+<!--          <div class="down-content">-->
+<!--            <a href="#"><h4>SUPERIOR ROOM</h4></a>-->
+<!--            <h6>$15.25</h6>-->
+<!--            <p>Area room: 42.1 m<sup>2</sup>.</p>-->
+<!--            <ul class="stars">-->
+<!--              <li><i class="fa fa-star"></i></li>-->
+<!--              <li><i class="fa fa-star"></i></li>-->
+<!--              <li><i class="fa fa-star"></i></li>-->
+<!--              <li><i class="fa fa-star"></i></li>-->
+<!--              <li><i class="fa fa-star"></i></li>-->
+<!--            </ul>-->
+<!--            <span>Reviews (48)</span>-->
+<!--          </div>-->
+<!--        </div>-->
+<!--      </div>-->
+<!--      <div class="col-md-4">-->
+<!--        <div class="product-item">-->
+<!--          <a href="#"><img-->
+<!--            src="https://furamavietnam.com/wp-content/uploads/2018/03/Vietnam_Danang_Furama_Ocean-Suite-Feature-370x239.jpg"-->
+<!--            alt=""></a>-->
+<!--          <div class="down-content">-->
+<!--            <a href="#"><h4>SUPERIOR LAKE VIEW</h4></a>-->
+<!--            <h6>$12.50</h6>-->
+<!--            <p>Area room: 42.1 m<sup>2</sup>.</p>-->
+<!--            <ul class="stars">-->
+<!--              <li><i class="fa fa-star"></i></li>-->
+<!--              <li><i class="fa fa-star"></i></li>-->
+<!--              <li><i class="fa fa-star"></i></li>-->
+<!--              <li><i class="fa fa-star"></i></li>-->
+<!--              <li><i class="fa fa-star"></i></li>-->
+<!--            </ul>-->
+<!--            <span>Reviews (16)</span>-->
+<!--          </div>-->
+<!--        </div>-->
+<!--      </div>-->
+<!--      <div class="col-md-4">-->
+<!--        <div class="product-item">-->
+<!--          <a href="#"><img-->
+<!--            src="https://furamavietnam.com/wp-content/uploads/2018/03/Vietnam_Danang_Furama_Ocean-Studio-Suite-F-370x239.jpg"-->
+<!--            alt=""></a>-->
+<!--          <div class="down-content">-->
+<!--            <a href="#"><h4>DELUXE LAKE VIEW</h4></a>-->
+<!--            <h6>$22.50</h6>-->
+<!--            <p>Area room: 56 m<sup>2</sup>.</p>-->
+<!--            <ul class="stars">-->
+<!--              <li><i class="fa fa-star"></i></li>-->
+<!--              <li><i class="fa fa-star"></i></li>-->
+<!--              <li><i class="fa fa-star"></i></li>-->
+<!--              <li><i class="fa fa-star"></i></li>-->
+<!--              <li><i class="fa fa-star"></i></li>-->
+<!--            </ul>-->
+<!--            <span>Reviews (32)</span>-->
+<!--          </div>-->
+<!--        </div>-->
+<!--      </div>-->
     </div>
   </div>
 </div>

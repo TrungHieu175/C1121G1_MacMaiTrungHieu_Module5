@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {ContractService} from "../../services/contract.service";
 
 @Component({
   selector: 'app-create-contract',
@@ -10,6 +11,7 @@ export class CreateContractComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
+
   }
 
 }

@@ -15,6 +15,7 @@ import { ListCustomerComponent } from './customer/list-customer/list-customer.co
 import { CreateContractComponent } from './contract/create-contract/create-contract.component';
 import { ListContractComponent } from './contract/list-contract/list-contract.component';
 import { ListServiceComponent } from './service/list-service/list-service.component';
+import {HttpClientModule} from "@angular/common/http";
 
 @NgModule({
   declarations: [
@@ -33,7 +34,9 @@ import { ListServiceComponent } from './service/list-service/list-service.compon
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
+
   ],
   providers: [],
   bootstrap: [AppComponent]

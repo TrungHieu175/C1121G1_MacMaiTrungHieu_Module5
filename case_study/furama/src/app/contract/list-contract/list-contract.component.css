@@ -42,10 +42,12 @@ td{
 /* demo styles */
 
 
-.body{
-  background: -webkit-linear-gradient(left, #25c481, #25b7c4);
-  background: linear-gradient(to right, #25c481, #25b7c4);
-  font-family: 'Roboto', sans-serif;
+body{
+  background-color: #4158D0;
+  background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
+  /*background: -webkit-linear-gradient(left, #25c481, #25b7c4);*/
+  /*background: linear-gradient(to right, #25c481, #25b7c4);*/
+  /*font-family: 'Roboto', sans-serif;*/
 }
 section{
   margin: 50px;

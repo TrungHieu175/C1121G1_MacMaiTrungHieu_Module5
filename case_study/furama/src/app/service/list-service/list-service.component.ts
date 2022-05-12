@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
+import {FacilityService} from "../../services/facility.service";
 
 @Component({
   selector: 'app-list-service',
@@ -7,9 +8,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ListServiceComponent implements OnInit {
 
-  constructor() { }
+  facilitys: any = [];
+
+  constructor(private facilityService: FacilityService) {
+  }
 
   ngOnInit(): void {
+    this.facilitys = this.facilityService.getFacilityList();
   }
+
 
 }

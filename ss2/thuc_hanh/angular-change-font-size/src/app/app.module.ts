@@ -11,6 +11,8 @@ import { ArticleComponent } from './angular-hackernews-app/article/article.compo
 import { LikeComponent } from './angular-hackernews-app/like/like.component';
 import { NavbarComponent } from './angular-hackernews-app/navbar/navbar.component';
 import { FooterComponent } from './angular-hackernews-app/footer/footer.component';
+import { NameCardComponent } from './name-card/name-card.component';
+import { ProgressBarComponent } from './progress-bar/progress-bar.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +23,9 @@ import { FooterComponent } from './angular-hackernews-app/footer/footer.componen
     ArticleComponent,
     LikeComponent,
     NavbarComponent,
-    FooterComponent
+    FooterComponent,
+    NameCardComponent,
+    ProgressBarComponent
   ],
     imports: [
         BrowserModule,
