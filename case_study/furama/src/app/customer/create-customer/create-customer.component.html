@@ -3,18 +3,25 @@
     <div class="col-md-8 mx-auto">
       <div class="contact-form">
         <h1>Create Customer</h1>
-        <form method="post">
+        <form [formGroup]="customerForm" method="post">
           <div class="row">
             <div class="col-sm-6">
               <div class="form-group">
                 <label for="inputName">Name<span style="color: red">*</span></label>
-                <input type="text" class="form-control" id="inputName" >
+                <input formControlName="name" type="text" class="form-control" id="inputName" >
+              </div>
+              <div *ngIf="customerForm.get('name').invalid && customerForm.get('name').touched">
+                <span style="color: red" *ngIf="customerForm.get('name').errors.required">Không để trống </span>
               </div>
             </div>
             <div class="col-sm-6">
               <div class="form-group">
                 <label for="inputEmail">Email<span style="color: red">*</span></label>
-                <input type="email" class="form-control" id="inputEmail">
+                <input formControlName="email" type="email" class="form-control" id="inputEmail">
+              </div>
+              <div *ngIf="customerForm.get('email').invalid && customerForm.get('email').touched">
+                <span style="color: red" *ngIf="customerForm.get('email').errors.required">Không để trống </span>
+                <span style="color: red" *ngIf="customerForm.get('email').errors.email">Nhập đúng định dạng email</span>
               </div>
             </div>
           </div>
@@ -22,35 +29,54 @@
             <div class="col-sm-6">
               <div class="form-group">
                 <label for="inputPhone">Phone<span style="color: red">*</span></label>
-                <input type="text" class="form-control" id="inputPhone" >
+                <input formControlName="phone" type="text" class="form-control" id="inputPhone" >
+              </div>
+              <div *ngIf="customerForm.get('phone').invalid && customerForm.get('phone').touched">
+                <span style="color: red" *ngIf="customerForm.get('phone').errors.required">Không để trống </span>
+                <span style="color: red" *ngIf="customerForm.get('phone').errors.pattern">Đầu số phải +84, và 9 đến 10 chữ số.</span>
               </div>
             </div>
             <div class="col-sm-6">
               <div class="form-group">
                 <label for="inputIdCard">Id Card<span style="color: red">*</span></label>
-                <input type="text" class="form-control" id="inputIdCard">
+                <input formControlName="idCard" type="text" class="form-control" id="inputIdCard">
+              </div>
+              <div *ngIf="customerForm.get('idCard').invalid && customerForm.get('idCard').touched">
+                <span style="color: red" *ngIf="customerForm.get('idCard').errors.required">Không để trống </span>
               </div>
             </div>
           </div>
           <div class="form-group">
             <label for="inputGender">Gender<span style="color: red">*</span></label>
-            <input type="text" class="form-control" id="inputGender">
+            <input formControlName="gender" type="text" class="form-control" id="inputGender">
+            <div *ngIf="customerForm.get('gender').invalid && customerForm.get('gender').touched">
+              <span style="color: red" *ngIf="customerForm.get('gender').errors.required">Không để trống </span>
+            </div>
           </div>
           <div class="form-group">
             <label for="inputType">Type<span style="color: red">*</span></label>
-            <select class="form-control" id="inputType">
+            <select formControlName="type" class="form-control" id="inputType">
               <option>SVip</option>
               <option>Vip</option>
               <option>Member</option>
             </select>
+            <div *ngIf="customerForm.get('type').invalid && customerForm.get('type').touched">
+              <span style="color: red" *ngIf="customerForm.get('type').errors.required">Không để trống </span>
+            </div>
           </div>
           <div class="form-group">
             <label for="inputBirthDay">BirthDay<span style="color: red">*</span></label>
-            <input type="date" class="form-control" id="inputBirthDay">
+            <input formControlName="dateOfBirth" type="date" class="form-control" id="inputBirthDay">
+            <div *ngIf="customerForm.get('dateOfBirth').invalid && customerForm.get('dateOfBirth').touched">
+              <span style="color: red" *ngIf="customerForm.get('dateOfBirth').errors.required">Không để trống </span>
+            </div>
           </div>
           <div class="form-group">
             <label for="inputMessage">Address</label>
-            <textarea class="form-control" id="inputMessage" rows="5"></textarea>
+            <textarea formControlName="address" class="form-control" id="inputMessage" rows="5"></textarea>
+            <div *ngIf="customerForm.get('address').invalid && customerForm.get('address').touched">
+              <span style="color: red" *ngIf="customerForm.get('address').errors.required">Không để trống </span>
+            </div>
           </div>
           <div class="text-center">
             <button type="submit" class="btn btn-primary"><i class="fa fa-paper-plane"></i> Send</button>

@@ -1,0 +1,99 @@
+<body>
+<div class="content-wrapper">
+  <div class="content">
+    <div class="signup-wrapper shadow-box">
+      <div class="company-details ">
+      </div>
+      <div class="signup-form ">
+        <div class="wrapper-2">
+          <div class="form-title">Register today!</div>
+          <div class="form">
+            <form [formGroup]="registerForm" (ngSubmit)="onSubmit()">
+              <p class="content-item">
+                <label>full name
+                  <input formControlName="name" type="text" placeholder="What zô name?" required>
+                </label>
+              </p>
+              <p style="color: red" *ngIf="registerForm.get('name').invalid && registerForm.get('name').touched">
+                Không để trống
+              </p>
+              <p class="content-item">
+                <label>email address
+                  <input type="text" placeholder="lorem@loremipsum.com" name="email" required formControlName="email">
+                </label>
+              </p>
+              <p style="color: red" *ngIf="registerForm.get('email').invalid && registerForm.get('email').touched">
+                Không để trống
+              </p>
+              <div>
+                <div formGroupName="pwGroup">
+                  <p class="content-item">
+                    <label>password
+                      <input formControlName="password" type="password" placeholder="*****" name="password" required>
+                    </label>
+                  </p>
+                  <p class="content-item">
+
+                    <label>confirm password
+                      <input formControlName="confirmPassword" type="password" placeholder="*****"
+                             name="confirmPassword"
+                             required>
+                    </label>
+                  </p>
+                  <p style="color: red"
+                     *ngIf="registerForm.hasError('passwordNotMatch',['pwGroup']) && registerForm.get('pwGroup').touched">
+                    Mật khẩu nhập không giống
+                  </p>
+                </div>
+              </div>
+              <p class="content-item">
+                <label>country
+                  <select name="country" id="country1" formControlName="country">
+                    <option value="Yue Nan">Yue Nan</option>
+                    <option value="China">China</option>
+                    <option value="USA">USA</option>
+                  </select>
+                </label>
+              </p>
+              <p style="color: red" *ngIf="registerForm.get('country').invalid && registerForm.get('country').touched">
+                Không để trống
+              </p>
+              <p class="content-item">
+                <label>age
+                  <input formControlName="age" type="number" placeholder="18" name="age" required>
+                </label>
+              </p>
+              <div *ngIf="registerForm.get('age').invalid && registerForm.get('age').touched">
+                <span style="color: red" *ngIf="registerForm.get('age').errors.required">Không để trống </span>
+                  <span style="color: red" *ngIf="registerForm.get('age').errors.min">Tuổi phải lớn hơn 18</span>
+              </div>
+                <p class="content-item">
+                  <label>gender
+                    <input formControlName="gender" type="radio" name="gender" value="Male" required>Male
+                    <input formControlName="gender" type="radio" name="gender" value="Female" required>Female
+                  </label>
+                </p>
+                <p style="color: red" *ngIf="registerForm.get('gender').invalid && registerForm.get('gender').touched">
+                  Không để trống
+                </p>
+                <p class="content-item">
+                  <label>phone
+                    <input formControlName="phone" type="text" placeholder="091XXXXX" name="phone" required>
+                  </label>
+                </p>
+              <div *ngIf="registerForm.get('phone').invalid && registerForm.get('phone').touched">
+                <span style="color: red" *ngIf="registerForm.get('phone').errors.required">Không để trống </span>
+                <span style="color: red" *ngIf="registerForm.get('phone').errors.pattern">đầu số phải +84, và 9 đến 10 chữ số.</span>
+              </div>
+                <button type="submit" class="signup">Register</button>
+                <a href="#" class="login">login</a>
+            </form>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+</div>
+</body>
