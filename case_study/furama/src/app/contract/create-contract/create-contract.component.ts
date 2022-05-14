@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import {ContractService} from "../../services/contract.service";
+import {FormGroup} from "@angular/forms";
 
 @Component({
   selector: 'app-create-contract',
@@ -7,6 +8,8 @@ import {ContractService} from "../../services/contract.service";
   styleUrls: ['./create-contract.component.css']
 })
 export class CreateContractComponent implements OnInit {
+
+  contractForm : FormGroup
 
   constructor() { }
 

@@ -1,0 +1,34 @@
+<body><section>
+  <!--for demo wrap-->
+  <h1>Dictionary</h1>
+  <div class="tbl-header">
+    <table cellpadding="0" cellspacing="0" border="0">
+      <thead>
+      <tr>
+        <th>Code</th>
+        <th>Japanese</th>
+        <th>Vietnamese</th>
+        <th>Detail</th>
+      </tr>
+      </thead>
+    </table>
+  </div>
+  <div class="tbl-content">
+    <table cellpadding="0" cellspacing="0" border="0">
+      <tbody>
+      <tr *ngFor="let words of dictionarys; index as i">
+        <td>{{i+1}}</td>
+        <td>{{words.word}}</td>
+        <td>{{words.translate}}</td>
+        <td><a [routerLink]="['/detail/', words.id]" type="button">Detail</a></td>
+      </tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<div class="made-with-love">
+  Made with
+  <i>♥</i> by
+  <a target="_blank" href="https://facebook.com/ablohaha">Hieu Handsome</a>
+</div></body>

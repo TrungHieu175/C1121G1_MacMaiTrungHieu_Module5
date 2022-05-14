@@ -14,6 +14,13 @@ import { FooterComponent } from './angular-hackernews-app/footer/footer.componen
 import { NameCardComponent } from './name-card/name-card.component';
 import { ProgressBarComponent } from './progress-bar/progress-bar.component';
 import { TodoComponent } from './todo/todo.component';
+import { TimelinesComponent } from './timelines/timelines.component';
+import { YoutubePlaylistComponent } from './youtube-playlist/youtube-playlist.component';
+import { YoutubePlayerComponent } from './youtube-player/youtube-player.component';
+import { ProductListComponent } from './product/product-list/product-list.component';
+import { ProductCreateComponent } from './product/product-create/product-create.component';
+import { ProductUpdateComponent } from './product/product-update/product-update.component';
+import { ProductDeleteComponent } from './product/product-delete/product-delete.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +34,14 @@ import { TodoComponent } from './todo/todo.component';
     FooterComponent,
     NameCardComponent,
     ProgressBarComponent,
-    TodoComponent
+    TodoComponent,
+    TimelinesComponent,
+    YoutubePlaylistComponent,
+    YoutubePlayerComponent,
+    ProductListComponent,
+    ProductCreateComponent,
+    ProductUpdateComponent,
+    ProductDeleteComponent
   ],
   imports: [
     BrowserModule,

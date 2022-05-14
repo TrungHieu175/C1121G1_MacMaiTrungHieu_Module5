@@ -8,7 +8,11 @@ import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import {RatingBarComponent} from './rating-bar/rating-bar.component';
 import {CountdownTimerComponent} from './countdown-timer/countdown-timer.component';
 import {RegisterComponent} from './register/register.component';
-import { LoginComponent } from './login/login.component';
+import {LoginComponent} from './login/login.component';
+import {DictionaryComponent} from './dictionary/dictionary.component';
+import {RouterModule} from "@angular/router";
+import {DictionaryDetailComponent} from './dictionary-detail/dictionary-detail.component';
+import {AppRoutingModule} from "./app-routing.module";
 
 @NgModule({
   declarations: [
@@ -18,12 +22,16 @@ import { LoginComponent } from './login/login.component';
     RatingBarComponent,
     CountdownTimerComponent,
     RegisterComponent,
-    LoginComponent
+    LoginComponent,
+    DictionaryComponent,
+    DictionaryDetailComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    RouterModule,
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]

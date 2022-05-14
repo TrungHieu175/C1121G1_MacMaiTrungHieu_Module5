@@ -9,56 +9,54 @@
               <div class="form-group">
                 <label for="inputCode">Code<span style="color: red">*</span></label>
                 <input formControlName="serviceCode" type="text" class="form-control" id="inputCode">
-              </div>
-              <div *ngIf="serviceForm.get('serviceCode').invalid && serviceForm.get('serviceCode').touched">
-                <span style="color: red" *ngIf="serviceForm.get('serviceCode').errors.required">Không để trống </span>
-                <span style="color: red" *ngIf="serviceForm.get('serviceCode').errors.pattern">Mã DV phải có định dạng DV-XXXX, X là số</span>
+                <div *ngIf="serviceForm.get('serviceCode').invalid && serviceForm.get('serviceCode').touched">
+                  <span style="color: red" *ngIf="serviceForm.get('serviceCode').errors.required">Không để trống </span>
+                  <span style="color: red" *ngIf="serviceForm.get('serviceCode').errors.pattern">Mã DV phải có định dạng DV-XXXX, X là số</span>
+                </div>
               </div>
             </div>
             <div class="col-sm-6">
               <div class="form-group">
                 <label for="inputName">Name<span style="color: red">*</span></label>
                 <input formControlName="serviceName" type="text" class="form-control" id="inputName">
-              </div>
-              <div *ngIf="serviceForm.get('serviceName').invalid && serviceForm.get('serviceName').touched">
-                <span style="color: red" *ngIf="serviceForm.get('serviceName').errors.required">Không để trống </span>
-                <span style="color: red"
-                      *ngIf="serviceForm.get('serviceName').errors.maxlength">Không nhập quá 15 kí tự</span>
+                <div *ngIf="serviceForm.get('serviceName').invalid && serviceForm.get('serviceName').touched">
+                  <span style="color: red" *ngIf="serviceForm.get('serviceName').errors.required">Không để trống </span>
+                  <span style="color: red"
+                        *ngIf="serviceForm.get('serviceName').errors.maxlength">Không nhập quá 15 kí tự</span>
+                </div>
               </div>
             </div>
-            <div class="col-sm-6">
               <div class="form-group">
                 <label for="inputArea">Area<span style="color: red">*</span></label>
                 <input formControlName="serviceArea" type="number" class="form-control" id="inputArea">
+                <div *ngIf="serviceForm.get('serviceArea').invalid && serviceForm.get('serviceArea').touched">
+                  <span style="color: red" *ngIf="serviceForm.get('serviceName').errors.required">Không để trống </span>
+                  <span style="color: red"
+                        *ngIf="serviceForm.get('serviceArea').errors.min">Không được nhỏ hơn 0 </span>
+                </div>
               </div>
-              <div *ngIf="serviceForm.get('serviceArea').invalid && serviceForm.get('serviceArea').touched">
-                <span style="color: red" *ngIf="serviceForm.get('serviceName').errors.required">Không để trống </span>
-                <span style="color: red"
-                      *ngIf="serviceForm.get('serviceArea').errors.min">Không được nhỏ hơn 0 </span>
-              </div>
-            </div>
           </div>
           <div class="row">
             <div class="col-sm-6">
               <div class="form-group">
                 <label for="inputCost">Cost<span style="color: red">*</span></label>
                 <input formControlName="serviceCost" type="number" class="form-control" id="inputCost">
-              </div>
-              <div *ngIf="serviceForm.get('serviceCost').invalid && serviceForm.get('serviceCost').touched">
-                <span style="color: red" *ngIf="serviceForm.get('serviceCost').errors.required">Không để trống </span>
-                <span style="color: red"
-                      *ngIf="serviceForm.get('serviceCost').errors.min">Không được nhỏ hơn 0</span>
+                <div *ngIf="serviceForm.get('serviceCost').invalid && serviceForm.get('serviceCost').touched">
+                  <span style="color: red" *ngIf="serviceForm.get('serviceCost').errors.required">Không để trống </span>
+                  <span style="color: red"
+                        *ngIf="serviceForm.get('serviceCost').errors.min">Không được nhỏ hơn 0</span>
+                </div>
               </div>
             </div>
             <div class="col-sm-6">
               <div class="form-group">
                 <label for="inputPeople">Max People<span style="color: red">*</span></label>
                 <input formControlName="serviceMaxPeople" type="number" class="form-control" id="inputPeople">
-              </div>
-              <div *ngIf="serviceForm.get('serviceMaxPeople').invalid && serviceForm.get('serviceMaxPeople').touched">
-                <span style="color: red" *ngIf="serviceForm.get('serviceMaxPeople').errors.required">Không để trống </span>
-                <span style="color: red"
-                      *ngIf="serviceForm.get('serviceMaxPeople').errors.min">Không được nhỏ hơn 0</span>
+                <div *ngIf="serviceForm.get('serviceMaxPeople').invalid && serviceForm.get('serviceMaxPeople').touched">
+                  <span style="color: red" *ngIf="serviceForm.get('serviceMaxPeople').errors.required">Không để trống </span>
+                  <span style="color: red"
+                        *ngIf="serviceForm.get('serviceMaxPeople').errors.min">Không được nhỏ hơn 0</span>
+                </div>
               </div>
             </div>
           </div>
@@ -67,22 +65,22 @@
               <div class="form-group">
                 <label for="inputRoom">Standard Room<span style="color: red">*</span></label>
                 <input formControlName="standardRoom" type="number" class="form-control" id="inputRoom">
-              </div>
-              <div *ngIf="serviceForm.get('standardRoom').invalid && serviceForm.get('standardRoom').touched">
-                <span style="color: red" *ngIf="serviceForm.get('standardRoom').errors.required">Không để trống </span>
-                <span style="color: red"
-                      *ngIf="serviceForm.get('standardRoom').errors.min">Không được nhỏ hơn 0</span>
+                <div *ngIf="serviceForm.get('standardRoom').invalid && serviceForm.get('standardRoom').touched">
+                  <span style="color: red" *ngIf="serviceForm.get('standardRoom').errors.required">Không để trống </span>
+                  <span style="color: red"
+                        *ngIf="serviceForm.get('standardRoom').errors.min">Không được nhỏ hơn 0</span>
+                </div>
               </div>
             </div>
             <div class="col-sm-6">
               <div class="form-group">
                 <label for="inputConvenience">Convenience<span style="color: red">*</span></label>
                 <input formControlName="convenience" type="text" class="form-control" id="inputConvenience">
-              </div>
-              <div *ngIf="serviceForm.get('convenience').invalid && serviceForm.get('convenience').touched">
-                <span style="color: red" *ngIf="serviceForm.get('convenience').errors.required">Không để trống </span>
-                <span style="color: red"
-                      *ngIf="serviceForm.get('convenience').errors.min">Không được nhỏ hơn 0</span>
+                <div *ngIf="serviceForm.get('convenience').invalid && serviceForm.get('convenience').touched">
+                  <span style="color: red" *ngIf="serviceForm.get('convenience').errors.required">Không để trống </span>
+                  <span style="color: red"
+                        *ngIf="serviceForm.get('convenience').errors.min">Không được nhỏ hơn 0</span>
+                </div>
               </div>
             </div>
           </div>
@@ -91,28 +89,28 @@
               <div class="form-group">
                 <label for="inputArea">Pool Area<span style="color: red">*</span></label>
                 <input formControlName="poolArea" type="text" class="form-control" id="inputArea1">
-              </div>
-              <div *ngIf="serviceForm.get('poolArea').invalid && serviceForm.get('poolArea').touched">
-                <span style="color: red" *ngIf="serviceForm.get('poolArea').errors.required">Không để trống </span>
-                <span style="color: red"
-                      *ngIf="serviceForm.get('poolArea').errors.min">Không được nhỏ hơn 0</span>
+                <div *ngIf="serviceForm.get('poolArea').invalid && serviceForm.get('poolArea').touched">
+                  <span style="color: red" *ngIf="serviceForm.get('poolArea').errors.required">Không để trống </span>
+                  <span style="color: red"
+                        *ngIf="serviceForm.get('poolArea').errors.min">Không được nhỏ hơn 0</span>
+                </div>
               </div>
             </div>
             <div class="col-sm-6">
               <div class="form-group">
                 <label for="inputFloor">Floor<span style="color: red">*</span></label>
                 <input formControlName="floors" type="text" class="form-control" id="inputFloor">
-              </div>
-              <div *ngIf="serviceForm.get('floors').invalid && serviceForm.get('floors').touched">
-                <span style="color: red" *ngIf="serviceForm.get('floors').errors.required">Không để trống </span>
-                <span style="color: red"
-                      *ngIf="serviceForm.get('floors').errors.min">Không được nhỏ hơn 0</span>
+                <div *ngIf="serviceForm.get('floors').invalid && serviceForm.get('floors').touched">
+                  <span style="color: red" *ngIf="serviceForm.get('floors').errors.required">Không để trống </span>
+                  <span style="color: red"
+                        *ngIf="serviceForm.get('floors').errors.min">Không được nhỏ hơn 0</span>
+                </div>
               </div>
             </div>
           </div>
           <div class="form-group">
             <label for="inputServiceType">Service Type<span style="color: red">*</span></label>
-            <select formControlName="serviceCode" class="form-control" id="inputServiceType">
+            <select formControlName="serviceType" class="form-control" id="inputServiceType">
               <option>Villa</option>
               <option>Room</option>
               <option>House</option>
