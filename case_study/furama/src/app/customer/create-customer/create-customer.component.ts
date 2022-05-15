@@ -1,5 +1,7 @@
 import {Component, OnInit} from '@angular/core';
-import {FormControl, FormGroup, Validators} from "@angular/forms";
+import {AbstractControl, FormControl, FormGroup, Validators} from "@angular/forms";
+import {CustomerService} from "../../services/customer.service";
+import {Router} from "@angular/router";
 
 @Component({
   selector: 'app-create-customer',
@@ -10,7 +12,8 @@ export class CreateCustomerComponent implements OnInit {
 
   customerForm: FormGroup;
 
-  constructor() {
+  constructor(private customerService:CustomerService,
+              private router:Router) {
   }
 
   ngOnInit(): void {
@@ -26,5 +29,22 @@ export class CreateCustomerComponent implements OnInit {
       type: new FormControl('', Validators.required),
     });
   }
+  checkAge(dayOfBirth: AbstractControl) {
+    const birth = new Date(dayOfBirth.value);
+    const birthDay = Date.now() - birth.getTime() - 86400000;
+    const time = new Date(birthDay);
+    const age = time.getUTCFullYear() - 1970;
+    if (age < 18) {
+      return {ageEro: true};
+    }
+    return null;
+  }
 
+  createCustomer() {
+    this.customerService.postProduct(this.customerForm.value).subscribe((response)=>{
+        alert('OK');
+        this.router.navigateByUrl('/product');
+      },
+      (error)=>{ alert('Failed') })
+  }
 }

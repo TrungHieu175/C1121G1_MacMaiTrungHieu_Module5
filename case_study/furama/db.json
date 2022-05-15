@@ -149,6 +149,27 @@
         "id": 2,
         "customerTypeName": "Platinium"
       }
+    },
+    {
+      "producer": "producer",
+      "model": "model",
+      "price": "3333",
+      "id": 11
+    },
+    {
+      "id": 22,
+      "customerCode": "KH-1111",
+      "customerName": "Nguyễn Thị Hào",
+      "customerBirthday": "1970-11-07",
+      "customerGender": false,
+      "customerIdCard": "643431213",
+      "customerPhone": "0945459999",
+      "customerEmail": "thihao07@gmail.com",
+      "customerAddress": "23 Nguyễn Hoàng, Đà Nẵng",
+      "customerType": {
+        "id": 5,
+        "customerTypeName": "Member"
+      }
     }
   ],
   "employee": [
@@ -157,7 +178,7 @@
       "employeeName": "Nguyễn Văn An",
       "employeeBirthday": "1970-11-07",
       "employeeIdCard": "456231786",
-      "employeeSalary": 1.0E7,
+      "employeeSalary": 10000000,
       "employeePhone": "901234121",
       "employeeEmail": "annguyen@gmail.com",
       "employeeAddress": "295 Nguyễn Tất Thành, Đà Nẵng",
@@ -179,7 +200,7 @@
       "employeeName": "Lê Văn Bình",
       "employeeBirthday": "1997-04-09",
       "employeeIdCard": "654231234",
-      "employeeSalary": 7000000.0,
+      "employeeSalary": 7000000,
       "employeePhone": "934212314",
       "employeeEmail": "binhlv@gmail.com",
       "employeeAddress": "22 Yên Bái, Đà Nẵng",
@@ -201,7 +222,7 @@
       "employeeName": "Hồ Thị Yến",
       "employeeBirthday": "1995-12-12",
       "employeeIdCard": "412352315",
-      "employeeSalary": 1.4E7,
+      "employeeSalary": 14000000,
       "employeePhone": "999231723",
       "employeeEmail": "thiyen@gmail.com",
       "employeeAddress": "K234/11 Điện Biên Phủ, Gia Lai",
@@ -223,7 +244,7 @@
       "employeeName": "Võ Công Toản",
       "employeeBirthday": "1980-04-04",
       "employeeIdCard": "123231365",
-      "employeeSalary": 1.7E7,
+      "employeeSalary": 17000000,
       "employeePhone": "374443232",
       "employeeEmail": "toan0404@gmail.com",
       "employeeAddress": "77 Hoàng Diệu, Quảng Trị",
@@ -245,7 +266,7 @@
       "employeeName": "Nguyễn Bỉnh Phát",
       "employeeBirthday": "1999-12-09",
       "employeeIdCard": "454363232",
-      "employeeSalary": 6000000.0,
+      "employeeSalary": 6000000,
       "employeePhone": "902341231",
       "employeeEmail": "phatphat@gmail.com",
       "employeeAddress": "43 Yên Bái, Đà Nẵng",
@@ -267,7 +288,7 @@
       "employeeName": "Khúc Nguyễn An Nghi",
       "employeeBirthday": "2000-11-08",
       "employeeIdCard": "964542311",
-      "employeeSalary": 7000000.0,
+      "employeeSalary": 7000000,
       "employeePhone": "978653213",
       "employeeEmail": "annghi20@gmail.com",
       "employeeAddress": "294 Nguyễn Tất Thành, Đà Nẵng",
@@ -289,7 +310,7 @@
       "employeeName": "Nguyễn Hữu Hà",
       "employeeBirthday": "1993-01-01",
       "employeeIdCard": "534323231",
-      "employeeSalary": 8000000.0,
+      "employeeSalary": 8000000,
       "employeePhone": "941234553",
       "employeeEmail": "nhh0101@gmail.com",
       "employeeAddress": "4 Nguyễn Chí Thanh, Huế",
@@ -311,7 +332,7 @@
       "employeeName": "Nguyễn Hà Đông",
       "employeeBirthday": "1989-09-03",
       "employeeIdCard": "234414123",
-      "employeeSalary": 9000000.0,
+      "employeeSalary": 9000000,
       "employeePhone": "642123111",
       "employeeEmail": "donghanguyen@gmail.com",
       "employeeAddress": "111 Hùng Vương, Hà Nội",
@@ -333,7 +354,7 @@
       "employeeName": "Tòng Hoang",
       "employeeBirthday": "1982-09-03",
       "employeeIdCard": "256781231",
-      "employeeSalary": 6000000.0,
+      "employeeSalary": 6000000,
       "employeePhone": "245144444",
       "employeeEmail": "hoangtong@gmail.com",
       "employeeAddress": "213 Hàm Nghi, Đà Nẵng",
@@ -355,7 +376,7 @@
       "employeeName": "Nguyễn Công Đạo",
       "employeeBirthday": "1994-01-08",
       "employeeIdCard": "755434343",
-      "employeeSalary": 8000000.0,
+      "employeeSalary": 8000000,
       "employeePhone": "988767111",
       "employeeEmail": "nguyencongdao12@gmail.com",
       "employeeAddress": "6 Hoà Khánh, Đồng Nai",
@@ -371,6 +392,23 @@
         "divisionId": 2,
         "divisionName": "Hành chính"
       }
+    }
+  ],
+  "course": [
+    {
+      "name": "Môn học 1 đã cập nhật",
+      "description": "Mô tả môn học 1",
+      "id": 1
+    },
+    {
+      "name": "Khóa học 2",
+      "description": "Mô tả về khóa học 2",
+      "id": 2
+    },
+    {
+      "name": "Khóa học 3",
+      "description": "Mô tả về khóa học 3",
+      "id": 3
     }
   ]
 }

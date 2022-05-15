@@ -1,108 +1,108 @@
 import {CustomerType} from "./customer-type";
 
 export class Customer {
-  private _customerId: number;
-  private _customerCode: string;
-  private _customerName: string;
-  private _customerBirthday: string;
-  private _customerGender: string;
-  private _customerIdCard: string;
-  private _customerPhone: string;
-  private _customerEmail: string;
-  private _customerAddress: string;
-  private _customerType: CustomerType;
+  private _Id: number;
+  private _Code: string;
+  private _Name: string;
+  private _Birthday: string;
+  private _Gender: string;
+  private _IdCard: string;
+  private _Phone: string;
+  private _Email: string;
+  private _Address: string;
+  private _Type: CustomerType;
 
 
   constructor(customerId: number, customerCode: string, customerName: string, customerBirthday: string, customerGender: string, customerIdCard: string, customerPhone: string, customerEmail: string, customerAddress: string, customerType: CustomerType) {
-    this._customerId = customerId;
-    this._customerCode = customerCode;
-    this._customerName = customerName;
-    this._customerBirthday = customerBirthday;
-    this._customerGender = customerGender;
-    this._customerIdCard = customerIdCard;
-    this._customerPhone = customerPhone;
-    this._customerEmail = customerEmail;
-    this._customerAddress = customerAddress;
-    this._customerType = customerType;
+    this._Id = customerId;
+    this._Code = customerCode;
+    this._Name = customerName;
+    this._Birthday = customerBirthday;
+    this._Gender = customerGender;
+    this._IdCard = customerIdCard;
+    this._Phone = customerPhone;
+    this._Email = customerEmail;
+    this._Address = customerAddress;
+    this._Type = customerType;
   }
 
-  get customerId(): number {
-    return this._customerId;
+  get Id(): number {
+    return this._Id;
   }
 
-  set customerId(value: number) {
-    this._customerId = value;
+  set Id(value: number) {
+    this._Id = value;
   }
 
-  get customerCode(): string {
-    return this._customerCode;
+  get Code(): string {
+    return this._Code;
   }
 
-  set customerCode(value: string) {
-    this._customerCode = value;
+  set Code(value: string) {
+    this._Code = value;
   }
 
-  get customerName(): string {
-    return this._customerName;
+  get Name(): string {
+    return this._Name;
   }
 
-  set customerName(value: string) {
-    this._customerName = value;
+  set Name(value: string) {
+    this._Name = value;
   }
 
-  get customerBirthday(): string {
-    return this._customerBirthday;
+  get Birthday(): string {
+    return this._Birthday;
   }
 
-  set customerBirthday(value: string) {
-    this._customerBirthday = value;
+  set Birthday(value: string) {
+    this._Birthday = value;
   }
 
-  get customerGender(): string {
-    return this._customerGender;
+  get Gender(): string {
+    return this._Gender;
   }
 
-  set customerGender(value: string) {
-    this._customerGender = value;
+  set Gender(value: string) {
+    this._Gender = value;
   }
 
-  get customerIdCard(): string {
-    return this._customerIdCard;
+  get IdCard(): string {
+    return this._IdCard;
   }
 
-  set customerIdCard(value: string) {
-    this._customerIdCard = value;
+  set IdCard(value: string) {
+    this._IdCard = value;
   }
 
-  get customerPhone(): string {
-    return this._customerPhone;
+  get Phone(): string {
+    return this._Phone;
   }
 
-  set customerPhone(value: string) {
-    this._customerPhone = value;
+  set Phone(value: string) {
+    this._Phone = value;
   }
 
-  get customerEmail(): string {
-    return this._customerEmail;
+  get Email(): string {
+    return this._Email;
   }
 
-  set customerEmail(value: string) {
-    this._customerEmail = value;
+  set Email(value: string) {
+    this._Email = value;
   }
 
-  get customerAddress(): string {
-    return this._customerAddress;
+  get Address(): string {
+    return this._Address;
   }
 
-  set customerAddress(value: string) {
-    this._customerAddress = value;
+  set Address(value: string) {
+    this._Address = value;
   }
 
-  get customerType(): CustomerType {
-    return this._customerType;
+  get Type(): CustomerType {
+    return this._Type;
   }
 
-  set customerType(value: CustomerType) {
-    this._customerType = value;
+  set Type(value: CustomerType) {
+    this._Type = value;
   }
 }
