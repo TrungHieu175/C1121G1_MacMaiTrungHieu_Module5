@@ -2,6 +2,8 @@ import {Component, OnInit} from '@angular/core';
 import {AbstractControl, FormControl, FormGroup, Validators} from "@angular/forms";
 import {CustomerService} from "../../services/customer.service";
 import {Router} from "@angular/router";
+import {MatSnackBar} from "@angular/material/snack-bar";
+import {ICustomerType} from "../../model/ICustomerType";
 
 @Component({
   selector: 'app-create-customer',
@@ -11,24 +13,28 @@ import {Router} from "@angular/router";
 export class CreateCustomerComponent implements OnInit {
 
   customerForm: FormGroup;
+  customerType: ICustomerType[];
 
-  constructor(private customerService:CustomerService,
-              private router:Router) {
+  constructor(private customerService: CustomerService,
+              private router: Router,
+              private matSnackBar: MatSnackBar) {
   }
 
   ngOnInit(): void {
 
     this.customerForm = new FormGroup({
-      name: new FormControl('', Validators.required),
-      dateOfBirth: new FormControl('', Validators.required),
-      gender: new FormControl('', Validators.required),
-      idCard: new FormControl('', Validators.required),
-      phone: new FormControl('', [Validators.required, Validators.pattern('^\\+84\\d{9,10}$')]),
-      email: new FormControl('', [Validators.required, Validators.email]),
-      address: new FormControl('', Validators.required),
-      type: new FormControl('', Validators.required),
+      customerName: new FormControl('', Validators.required),
+      customerBirthday: new FormControl('', Validators.required),
+      customerGender: new FormControl('', Validators.required),
+      customerIdCard: new FormControl('', Validators.required),
+      customerPhone: new FormControl('', [Validators.required, Validators.pattern('^\\+84\\d{9,10}$')]),
+      customerEmail: new FormControl('', [Validators.required, Validators.email]),
+      customerAddress: new FormControl('', Validators.required),
+      customerType: new FormControl('', Validators.required),
     });
+    this.getAllCustomerType();
   }
+
   checkAge(dayOfBirth: AbstractControl) {
     const birth = new Date(dayOfBirth.value);
     const birthDay = Date.now() - birth.getTime() - 86400000;
@@ -41,10 +47,44 @@ export class CreateCustomerComponent implements OnInit {
   }
 
   createCustomer() {
-    this.customerService.postProduct(this.customerForm.value).subscribe((response)=>{
-        alert('OK');
-        this.router.navigateByUrl('/product');
-      },
-      (error)=>{ alert('Failed') })
+    if (this.customerForm.invalid) {
+      this.customerService.postProduct(this.customerForm.value).subscribe((response) => {
+          alert('OK');
+          this.router.navigateByUrl('/customer');
+        },
+        (error) => {
+          alert('Failed')
+        })
+    }
+
   }
+
+  openSnackBar(message: string, action: string) {
+    this.matSnackBar.open(message, action);
+  }
+
+  getAllCustomerType() {
+    this.customerService.getAllCustomerType().subscribe(data => {
+      console.log(data);
+      this.customerType = data;
+      this.customerForm.controls['customerType'].setValue(this.customerType[0]);
+    })
+  }
+
+
+  saveCustomer() {
+    this.customerService.getCreateCustomer(this.customerForm.value).subscribe(() => {
+      },
+      error => {
+        this.matSnackBar.open('Add new Customer Failed', 'OK!');
+      },
+      () => {
+        this.matSnackBar.open('Add new Customer Successfully', 'OK!');
+      }
+    );
+  this.router.navigate(['customer']);
+  }
+
+
 }
+

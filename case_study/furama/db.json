@@ -170,6 +170,61 @@
         "id": 5,
         "customerTypeName": "Member"
       }
+    },
+    {
+      "customerName": "",
+      "customerBirthday": "",
+      "customerGender": "",
+      "customerIdCard": "",
+      "customerPhone": "",
+      "customerEmail": "",
+      "customerAddress": "",
+      "customerType": "",
+      "id": 23
+    },
+    {
+      "customerName": "",
+      "customerBirthday": "",
+      "customerGender": "",
+      "customerIdCard": "",
+      "customerPhone": "",
+      "customerEmail": "",
+      "customerAddress": "",
+      "customerType": "",
+      "id": 24
+    },
+    {
+      "customerName": "",
+      "customerBirthday": "",
+      "customerGender": "",
+      "customerIdCard": "",
+      "customerPhone": "",
+      "customerEmail": "",
+      "customerAddress": "",
+      "customerType": "",
+      "id": 25
+    }
+  ],
+  "customerType": [
+    {
+      "id": 1,
+      "customerTypeName": "Diamond"
+    },
+    {
+      "id": 2,
+      "customerTypeName": "Platinum"
+    },
+    {
+      "id": 3,
+      "customerTypeName": "Member"
+    },
+    {
+      "id": 4,
+      "customerTypeName": "Gold"
+    },
+    {
+      "id": 5,
+      "customerTypeName": "Silver"
     }
   ],
   "employee": [

@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import {ContractService} from "../../services/contract.service";
+import {MatDialog} from "@angular/material/dialog";
 
 @Component({
   selector: 'app-list-contract',
@@ -14,5 +15,6 @@ export class ListContractComponent implements OnInit {
   ngOnInit(): void {
     this.contracts = this.contractService.getContractList()
   }
+
 
 }

@@ -21,6 +21,11 @@ import { ProductListComponent } from './product/product-list/product-list.compon
 import { ProductCreateComponent } from './product/product-create/product-create.component';
 import { ProductUpdateComponent } from './product/product-update/product-update.component';
 import { ProductDeleteComponent } from './product/product-delete/product-delete.component';
+import {HttpClientModule} from "@angular/common/http";
+import { CategoryCreateComponent } from './category/category-create/category-create.component';
+import { CategoryListComponent } from './category/category-list/category-list.component';
+import { CategoryDeleteComponent } from './category/category-delete/category-delete.component';
+import { CategoryEditComponent } from './category/category-edit/category-edit.component';
 
 @NgModule({
   declarations: [
@@ -41,13 +46,19 @@ import { ProductDeleteComponent } from './product/product-delete/product-delete.
     ProductListComponent,
     ProductCreateComponent,
     ProductUpdateComponent,
-    ProductDeleteComponent
+    ProductDeleteComponent,
+    CategoryCreateComponent,
+    CategoryListComponent,
+    CategoryDeleteComponent,
+    CategoryEditComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    AppRoutingModule,
+    HttpClientModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

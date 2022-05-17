@@ -17,6 +17,14 @@ import { ListContractComponent } from './contract/list-contract/list-contract.co
 import { ListServiceComponent } from './service/list-service/list-service.component';
 import {HttpClientModule} from "@angular/common/http";
 import {ReactiveFormsModule} from "@angular/forms";
+import {NgxPaginationModule} from "ngx-pagination";
+import {BrowserAnimationsModule} from "@angular/platform-browser/animations";
+import {MatInputModule} from "@angular/material/input";
+import {MatFormFieldModule} from "@angular/material/form-field";
+import {MatSnackBarModule} from "@angular/material/snack-bar";
+import {MatButtonModule} from "@angular/material/button";
+import { DeleteCustomerComponent } from './customer/delete-customer/delete-customer.component';
+import { MatDialogModule} from "@angular/material/dialog";
 
 @NgModule({
   declarations: [
@@ -31,13 +39,23 @@ import {ReactiveFormsModule} from "@angular/forms";
     ListCustomerComponent,
     CreateContractComponent,
     ListContractComponent,
-    ListServiceComponent
+    ListServiceComponent,
+    DeleteCustomerComponent
   ],
     imports: [
         BrowserModule,
         AppRoutingModule,
         HttpClientModule,
-        ReactiveFormsModule
+        ReactiveFormsModule,
+      NgxPaginationModule,
+      MatSnackBarModule,
+      MatFormFieldModule,
+      MatButtonModule,
+      MatInputModule,
+      BrowserAnimationsModule,
+      MatDialogModule,
+
+
 
     ],
   providers: [],

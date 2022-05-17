@@ -2,11 +2,17 @@ import {Injectable} from '@angular/core';
 import {Customer} from "../model/customer";
 import {CustomerType} from "../model/customer-type";
 import {HttpClient} from "@angular/common/http";
+import {Observable} from "rxjs";
+import {ICustomer} from "../model/ICustomer";
+import {ICustomerType} from "../model/ICustomerType";
 
 @Injectable({
   providedIn: 'root'
 })
 export class CustomerService {
+
+  URL_LIST = 'http://localhost:3000/customer';
+  URL_LIST_TYPE = 'http://localhost:3000/customerType';
   // private vip: CustomerType;
   // private normal: CustomerType;
   public getCustomerList() {
@@ -29,15 +35,23 @@ export class CustomerService {
     return this.http.post<any>('http://localhost:3000/customer/', data);
   }
 
-  getAllProducts() {
-    return this.http.get<any>('http://localhost:3000/customer');
+  getAllCustomer(): Observable<ICustomer[]> {
+    return this.http.get<ICustomer[]>(this.URL_LIST);
+
   }
 
-  putProduct(data: any, id: number) {
-    return this.http.put<any>('http://localhost:3000/customer/' + id, data);
+  getAllCustomerType(): Observable<ICustomerType[]> {
+    return this.http.get<ICustomerType[]>(this.URL_LIST_TYPE);
   }
 
-  deleteProduct(id: number) {
-    return this.http.delete<any>('http://localhost:3000/customer/' + id);
+  getCreateCustomer(data) { // Add Customer
+    return this.http.post<ICustomer[]>(`${this.URL_LIST}`, data);
+  }
+  getCustomerById(id) { // findById Customer
+    return this.http.get<Customer>(`${this.URL_LIST}/${id}`);
+  }
+
+  getDeleteCustomer(id) { // Delete Customer
+    return this.http.delete<Customer[]>(`${this.URL_LIST}/${id}`);
   }
 }

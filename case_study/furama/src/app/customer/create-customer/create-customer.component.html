@@ -3,25 +3,26 @@
     <div class="col-md-8 mx-auto">
       <div class="contact-form">
         <h1>Create Customer</h1>
-        <form [formGroup]="customerForm">
+        <form [formGroup]="customerForm" (ngSubmit)="createCustomer()">
           <div class="row">
             <div class="col-sm-6">
               <div class="form-group">
                 <label for="inputName">Name<span style="color: red">*</span></label>
-                <input formControlName="name" type="text" class="form-control" id="inputName" >
+                <input formControlName="customerName" type="text" class="form-control" id="inputName" >
               </div>
-              <div *ngIf="customerForm.get('name').invalid && customerForm.get('name').touched">
-                <span style="color: red" *ngIf="customerForm.get('name').errors.required">Không để trống </span>
+              <div *ngIf="customerForm.get('customerName').invalid && customerForm.get('customerName').touched">
+
+                <span style="color: red" *ngIf="customerForm.get('customerName').errors.required">Không để trống </span>
               </div>
             </div>
             <div class="col-sm-6">
               <div class="form-group">
                 <label for="inputEmail">Email<span style="color: red">*</span></label>
-                <input formControlName="email" type="email" class="form-control" id="inputEmail">
+                <input formControlName="customerEmail" type="customerEmail" class="form-control" id="inputEmail">
               </div>
-              <div *ngIf="customerForm.get('email').invalid && customerForm.get('email').touched">
-                <span style="color: red" *ngIf="customerForm.get('email').errors.required">Không để trống </span>
-                <span style="color: red" *ngIf="customerForm.get('email').errors.email">Nhập đúng định dạng email</span>
+              <div *ngIf="customerForm.get('customerEmail').invalid && customerForm.get('customerEmail').touched">
+                <span style="color: red" *ngIf="customerForm.get('customerEmail').errors.required">Không để trống </span>
+                <span style="color: red" *ngIf="customerForm.get('customerEmail').errors.email">Nhập đúng định dạng email</span>
               </div>
             </div>
           </div>
@@ -29,60 +30,72 @@
             <div class="col-sm-6">
               <div class="form-group">
                 <label for="inputPhone">Phone<span style="color: red">*</span></label>
-                <input formControlName="phone" type="text" class="form-control" id="inputPhone" >
+                <input formControlName="customerPhone" type="text" class="form-control" id="inputPhone" >
               </div>
-              <div *ngIf="customerForm.get('phone').invalid && customerForm.get('phone').touched">
-                <span style="color: red" *ngIf="customerForm.get('phone').errors.required">Không để trống </span>
-                <span style="color: red" *ngIf="customerForm.get('phone').errors.pattern">Đầu số phải +84, và 9 đến 10 chữ số.</span>
+              <div *ngIf="customerForm.get('customerPhone').invalid && customerForm.get('customerPhone').touched">
+                <span style="color: red" *ngIf="customerForm.get('customerPhone').errors.required">Không để trống </span>
+                <span style="color: red" *ngIf="customerForm.get('customerPhone').errors.pattern">Đầu số phải +84, và 9 đến 10 chữ số.</span>
               </div>
             </div>
             <div class="col-sm-6">
               <div class="form-group">
                 <label for="inputIdCard">Id Card<span style="color: red">*</span></label>
-                <input formControlName="idCard" type="text" class="form-control" id="inputIdCard">
+                <input formControlName="customerIdCard" type="text" class="form-control" id="inputIdCard">
               </div>
-              <div *ngIf="customerForm.get('idCard').invalid && customerForm.get('idCard').touched">
-                <span style="color: red" *ngIf="customerForm.get('idCard').errors.required">Không để trống </span>
+              <div *ngIf="customerForm.get('customerIdCard').invalid && customerForm.get('customerIdCard').touched">
+                <span style="color: red" *ngIf="customerForm.get('customerIdCard').errors.required">Không để trống </span>
               </div>
             </div>
           </div>
           <div class="form-group">
             <label for="inputGender">Gender<span style="color: red">*</span></label>
-            <input formControlName="gender" type="text" class="form-control" id="inputGender">
-            <div *ngIf="customerForm.get('gender').invalid && customerForm.get('gender').touched">
-              <span style="color: red" *ngIf="customerForm.get('gender').errors.required">Không để trống </span>
+            <input formControlName="customerGender" type="text" class="form-control" id="inputGender">
+            <div *ngIf="customerForm.get('customerGender').invalid && customerForm.get('customerGender').touched">
+              <span style="color: red" *ngIf="customerForm.get('customerGender').errors.required">Không để trống </span>
             </div>
           </div>
           <div class="form-group">
             <label for="inputType">Type<span style="color: red">*</span></label>
-            <select formControlName="type" class="form-control" id="inputType">
-              <option>SVip</option>
-              <option>Vip</option>
-              <option>Member</option>
+            <select formControlName="customerType"  class="form-control" id="inputType">
+<!--              <option selected>&#45;&#45;Chon&#45;&#45;</option>-->
+              <option *ngFor="let type of customerType" [ngValue]="type" >{{type.customerTypeName}}</option>
             </select>
-            <div *ngIf="customerForm.get('type').invalid && customerForm.get('type').touched">
-              <span style="color: red" *ngIf="customerForm.get('type').errors.required">Không để trống </span>
+            <div *ngIf="customerForm.get('customerType').invalid && customerForm.get('customerType').touched">
+              <span style="color: red" *ngIf="customerForm.get('customerType').errors.required">Không để trống </span>
             </div>
           </div>
           <div class="form-group">
             <label for="inputBirthDay">BirthDay<span style="color: red">*</span></label>
-            <input formControlName="dateOfBirth" type="date" class="form-control" id="inputBirthDay">
-            <div *ngIf="customerForm.get('dateOfBirth').invalid && customerForm.get('dateOfBirth').touched">
-              <span style="color: red" *ngIf="customerForm.get('dateOfBirth').errors.required">Không để trống </span>
+            <input formControlName="customerBirthday" type="date" class="form-control" id="inputBirthDay">
+            <div *ngIf="customerForm.get('customerBirthday').invalid && customerForm.get('customerBirthday').touched">
+              <span style="color: red" *ngIf="customerForm.get('customerBirthday').errors.required">Không để trống </span>
             </div>
           </div>
           <div class="form-group">
             <label for="inputMessage">Address</label>
-            <textarea formControlName="address" class="form-control" id="inputMessage" rows="5"></textarea>
-            <div *ngIf="customerForm.get('address').invalid && customerForm.get('address').touched">
-              <span style="color: red" *ngIf="customerForm.get('address').errors.required">Không để trống </span>
+            <textarea formControlName="customerAddress" class="form-control" id="inputMessage" rows="5"></textarea>
+            <div *ngIf="customerForm.get('customerAddress').invalid && customerForm.get('customerAddress').touched">
+              <span style="color: red" *ngIf="customerForm.get('customerAddress').errors.required">Không để trống </span>
             </div>
           </div>
           <div class="text-center">
-            <button (click)="createCustomer()" type="submit" class="btn btn-primary"><i class="fa fa-paper-plane"></i> Send</button>
+            <button (click)="openSnackBar(message.value, action.value)" [disabled]="!customerForm.valid" type="submit" class="btn btn-primary"><i class="fa fa-paper-plane"></i> Send</button>
           </div>
         </form>
       </div>
     </div>
   </div>
 </div>
+
+<mat-form-field appearance="fill" hidden>
+  <mat-label>Message</mat-label>
+  <input matInput value="Thêm mới thành công!" #message>
+</mat-form-field>
+
+<mat-form-field appearance="fill" hidden>
+  <mat-label>Action</mat-label>
+  <input matInput value="OK!" #action>
+</mat-form-field>
+
+
+

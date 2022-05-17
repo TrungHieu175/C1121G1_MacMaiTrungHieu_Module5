@@ -16,27 +16,40 @@ export class ProductDeleteComponent implements OnInit {
   constructor(private productService: ProductService,
               private activatedRoute: ActivatedRoute,
               private router: Router) {
+    // this.activatedRoute.paramMap.subscribe((paramMap: ParamMap) => {
+    //   this.id = +paramMap.get('id');
+    //   const product = this.getProduct(this.id);
+    //   this.productForm = new FormGroup({
+    //     id: new FormControl(product.id),
+    //     name: new FormControl(product.name),
+    //     price: new FormControl(product.price),
+    //     description: new FormControl(product.description),
+    //   });
+    // });
     this.activatedRoute.paramMap.subscribe((paramMap: ParamMap) => {
       this.id = +paramMap.get('id');
-      const product = this.getProduct(this.id);
-      this.productForm = new FormGroup({
-        id: new FormControl(product.id),
-        name: new FormControl(product.name),
-        price: new FormControl(product.price),
-        description: new FormControl(product.description),
-      });
+      this.getProduct(this.id);
     });
+
   }
 
   ngOnInit() {
   }
 
   getProduct(id: number) {
-    return this.productService.findById(id);
+    return this.productService.findById(id).subscribe(product => {
+      this.productForm = new FormGroup({
+        name: new FormControl(product.name),
+        price: new FormControl(product.price),
+        description: new FormControl(product.description),
+        category: new FormControl(product.category.id)
+      });
+    });
   }
 
   deleteProduct(id: number) {
-    this.productService.deleteProduct(id);
-    this.router.navigate(['/product/list']);
+    this.productService.deleteProduct(id).subscribe(() => {
+      this.router.navigate(['/product/list']);
+    }, e => console.log(e));
   }
 }
