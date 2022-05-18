@@ -30,7 +30,11 @@
       <tr>
         <td style="color: white">{{customer.customerCode}}</td>
         <td>{{customer.customerName}}</td>
-        <td>{{customer.customerGender}}</td>
+        <td><span *ngIf="customer.customerGender == true">
+          Nam
+        </span><span *ngIf="customer.customerGender == false">
+          Nữ
+        </span></td>
         <td>{{customer.customerAddress}}</td>
         <td>{{customer.customerPhone}}</td>
         <td>{{customer.customerEmail}}</td>
@@ -95,7 +99,7 @@
       </tbody>
 
     </table>
-    <pagination-controls (pageChange)="p = $event" style="margin-left: 55%"></pagination-controls>
+    <pagination-controls (pageChange)="p = $event" style="margin-left: 55%;color: white"></pagination-controls>
   </div>
 </section>
 <!-- Modal -->

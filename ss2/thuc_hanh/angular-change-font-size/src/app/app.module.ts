@@ -26,6 +26,7 @@ import { CategoryCreateComponent } from './category/category-create/category-cre
 import { CategoryListComponent } from './category/category-list/category-list.component';
 import { CategoryDeleteComponent } from './category/category-delete/category-delete.component';
 import { CategoryEditComponent } from './category/category-edit/category-edit.component';
+import {SharedModule} from "./shared/shared.module";
 
 @NgModule({
   declarations: [
@@ -59,6 +60,7 @@ import { CategoryEditComponent } from './category/category-edit/category-edit.co
     ReactiveFormsModule,
     AppRoutingModule,
     HttpClientModule,
+    SharedModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -13,6 +13,9 @@ import {DictionaryComponent} from './dictionary/dictionary.component';
 import {RouterModule} from "@angular/router";
 import {DictionaryDetailComponent} from './dictionary-detail/dictionary-detail.component';
 import {AppRoutingModule} from "./app-routing.module";
+import {NgImageSliderModule} from "ng-image-slider";
+import {ImgSliderModule} from "./img-slider/img-slider.module";
+import {SharedModule} from "./shared/shared.module";
 
 @NgModule({
   declarations: [
@@ -31,7 +34,10 @@ import {AppRoutingModule} from "./app-routing.module";
     FormsModule,
     ReactiveFormsModule,
     RouterModule,
-    AppRoutingModule
+    AppRoutingModule,
+    NgImageSliderModule,
+    ImgSliderModule,
+    SharedModule
   ],
   providers: [],
   bootstrap: [AppComponent]
