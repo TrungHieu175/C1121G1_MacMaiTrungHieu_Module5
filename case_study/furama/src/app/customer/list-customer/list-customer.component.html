@@ -1,105 +1,178 @@
-<body>
+<!--<body>-->
 <section class="body">
   <!--for demo wrap-->
   <h1>Customer</h1>
-  <td>
+<!--  <td>-->
 <!--    <button type="button" (click)="openCreateDialog(customerList.push())">-->
 <!--    Create Customer-->
 <!--  </button>-->
 
 <!-- class="btn btn-primary" data-toggle="modal" data-target="#exampleModalLong"   <a >Create</a>-->
-  </td>
-  <div class="tbl-header">
-    <table cellpadding="0" cellspacing="0" border="0">
-      <thead>
-      <tr>
-        <th>Code</th>
-        <th>Name</th>
-        <th>Gender</th>
-        <th>Address</th>
-        <th>Phone</th>
-        <th>Email</th>
-        <th>Type</th>
-      </tr>
-      </thead>
-    </table>
-  </div>
-  <div class="tbl-content">
-    <table cellpadding="0" cellspacing="0" border="0">
-      <tbody *ngFor="let customer of customerList |paginate: { itemsPerPage: 4, currentPage: p}">
-      <tr>
-        <td style="color: white">{{customer.customerCode}}</td>
-        <td>{{customer.customerName}}</td>
-        <td><span *ngIf="customer.customerGender == true">
-          Nam
-        </span><span *ngIf="customer.customerGender == false">
-          Nữ
-        </span></td>
-        <td>{{customer.customerAddress}}</td>
-        <td>{{customer.customerPhone}}</td>
-        <td>{{customer.customerEmail}}</td>
-        <td>{{customer.customerType.customerTypeName}}</td>
-<!--        <td *ngIf="customer.Type != null">{{customer.Type.name}}</td>-->
-      </tr>
-<!--      <tr>-->
-<!--        <td>Marketing</td>-->
-<!--        <td>16 Nov 2015</td>-->
-<!--        <td>30 Nov 2017</td>-->
-<!--        <td>kathy_82@example.com</td>-->
-<!--        <td>26</td>-->
-<!--        <td>New York City, NY</td>-->
-<!--        <td>424242xxxxxx1616</td>-->
-<!--      </tr>-->
-<!--      <tr>-->
-<!--        <td>CFO</td>-->
-<!--        <td>16 Nov 2013</td>-->
-<!--        <td>30 Nov 2017</td>-->
-<!--        <td>elizabeth82@example.com</td>-->
-<!--        <td>32</td>-->
-<!--        <td>New York City, NY</td>-->
-<!--        <td>424242xxxxxx5326</td>-->
-<!--      </tr>-->
-<!--      <tr>-->
-<!--        <td>Designer</td>-->
-<!--        <td>16 Nov 2013</td>-->
-<!--        <td>30 Nov 2017</td>-->
-<!--        <td>michael94@example.com</td>-->
-<!--        <td>22</td>-->
-<!--        <td>New York City, NY</td>-->
-<!--        <td>424242xxxxxx6328</td>-->
-<!--      </tr>-->
-<!--      <tr>-->
-<!--        <td>Developer</td>-->
-<!--        <td>16 Nov 2017</td>-->
-<!--        <td>30 Nov 2017</td>-->
-<!--        <td>jasoncox@example.com</td>-->
-<!--        <td>25</td>-->
-<!--        <td>New York City, NY</td>-->
-<!--        <td>424242xxxxxx7648</td>-->
-<!--      </tr>-->
-<!--      <tr>-->
-<!--        <td>Sale</td>-->
-<!--        <td>16 Nov 2016</td>-->
-<!--        <td>30 Nov 2017</td>-->
-<!--        <td>christian_83@example.com</td>-->
-<!--        <td>28</td>-->
-<!--        <td>New York City, NY</td>-->
-<!--        <td>424242xxxxxx4152</td>-->
-<!--      </tr>-->
-<!--      <tr>-->
-<!--        <td>Support</td>-->
-<!--        <td>16 Nov 2013</td>-->
-<!--        <td>30 Nov 2017</td>-->
-<!--        <td>emily90@example.com</td>-->
-<!--        <td>24</td>-->
-<!--        <td>New York City, NY</td>-->
-<!--        <td>424242xxxxxx6668</td>-->
-<!--      </tr>-->
+<!--  </td>-->
+  <br><br><br>
+  <div class="container-fluid">
+    <div style="display: flex; justify-content: center">
+      <button style="padding: 0.2rem 6rem;" mat-raised-button color="accent" (click)="createCustomer()">Create</button>
+    </div>
+    <mat-form-field appearance="standard">
+      <mat-label>Filter</mat-label>
+      <input matInput (keyup)="applyFilter($event)" placeholder="Ex. Mia" #input>
+    </mat-form-field>
+    <div class="mat-elevation-z8">
+      <table mat-table [dataSource]="dataSource" matSort>
+        <ng-container matColumnDef="id">
+          <th mat-header-cell *matHeaderCellDef mat-sort-header> Customer Id</th>
+          <td mat-cell *matCellDef="let row"> {{row.id}} </td>
+        </ng-container>
 
-      </tbody>
+        <ng-container matColumnDef="customerCode">
+          <th mat-header-cell *matHeaderCellDef mat-sort-header> Customer Code</th>
+          <td mat-cell *matCellDef="let row"> {{row.customerCode}} </td>
+        </ng-container>
 
-    </table>
-    <pagination-controls (pageChange)="p = $event" style="margin-left: 55%;color: white"></pagination-controls>
+        <ng-container matColumnDef="customerName">
+          <th mat-header-cell *matHeaderCellDef mat-sort-header> Customer Name</th>
+          <td mat-cell *matCellDef="let row"> {{row.customerName}} </td>
+        </ng-container>
+
+        <ng-container matColumnDef="customerBirthday">
+          <th mat-header-cell *matHeaderCellDef mat-sort-header> Customer Birthday</th>
+          <td mat-cell *matCellDef="let row"> {{row.customerBirthday | date:'dd/MM/yyyy'}} </td>
+        </ng-container>
+        <ng-container matColumnDef="customerGender">
+          <th mat-header-cell *matHeaderCellDef mat-sort-header> Customer Gender</th>
+          <td mat-cell *matCellDef="let row"> {{row.customerGender == 0 ? 'Female' : 'Male'}} </td>
+        </ng-container>
+
+        <ng-container matColumnDef="customerIdCard">
+          <th mat-header-cell *matHeaderCellDef mat-sort-header> Customer Id Card</th>
+          <td mat-cell *matCellDef="let row"> {{row.customerIdCard}} </td>
+        </ng-container>
+
+        <!-- Name Column -->
+        <ng-container matColumnDef="customerPhone">
+          <th mat-header-cell *matHeaderCellDef mat-sort-header> Customer Phone</th>
+          <td mat-cell *matCellDef="let row"> {{row.customerPhone}} </td>
+        </ng-container>
+
+        <ng-container matColumnDef="actions">
+          <th mat-header-cell *matHeaderCellDef mat-sort-header > Actions</th>
+          <td mat-cell *matCellDef="let row">
+            <button class="mr-2" mat-raised-button color="primary" (click)="updateCustomer(row)">Update
+<!--              <mat-icon><i class="bi bi-arrow-through-heart" >edit_calendar</i></mat-icon>-->
+            </button>
+            <button mat-raised-button color="warn" (click)="deleteCustomer(row)">Delete
+<!--              <mat-icon><i class="material-icons">folder_delete</i></mat-icon>-->
+            </button>
+          </td>
+        </ng-container>
+
+        <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+        <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+
+        <!-- Row shown when there is no matching data. -->
+        <tr class="mat-row" *matNoDataRow>
+          <td class="mat-cell" colspan="4">No data matching the filter "{{input.value}}"</td>
+        </tr>
+      </table>
+
+      <mat-paginator [pageSizeOptions]="[5, 10, 25, 100]" aria-label="Select page of users"></mat-paginator>
+    </div>
+
+
+
+
+<!--  <div class="tbl-header">-->
+<!--    <table cellpadding="0" cellspacing="0" border="0">-->
+<!--      <thead>-->
+<!--      <tr>-->
+<!--        <th>Code</th>-->
+<!--        <th>Name</th>-->
+<!--        <th>Gender</th>-->
+<!--        <th>Address</th>-->
+<!--        <th>Phone</th>-->
+<!--        <th>Email</th>-->
+<!--        <th>Type</th>-->
+<!--      </tr>-->
+<!--      </thead>-->
+<!--    </table>-->
+<!--  </div>-->
+<!--  <div class="tbl-content">-->
+<!--    <table cellpadding="0" cellspacing="0" border="0">-->
+<!--      <tbody *ngFor="let customer of customerList |paginate: { itemsPerPage: 4, currentPage: p}">-->
+<!--      <tr>-->
+<!--        <td style="color: white">{{customer.customerCode}}</td>-->
+<!--        <td>{{customer.customerName}}</td>-->
+<!--        <td><span *ngIf="customer.customerGender == true">-->
+<!--          Nam-->
+<!--        </span><span *ngIf="customer.customerGender == false">-->
+<!--          Nữ-->
+<!--        </span></td>-->
+<!--        <td>{{customer.customerAddress}}</td>-->
+<!--        <td>{{customer.customerPhone}}</td>-->
+<!--        <td>{{customer.customerEmail}}</td>-->
+<!--        <td>{{customer.customerType.customerTypeName}}</td>-->
+<!--&lt;!&ndash;        <td *ngIf="customer.Type != null">{{customer.Type.name}}</td>&ndash;&gt;-->
+<!--      </tr>-->
+<!--&lt;!&ndash;      <tr>&ndash;&gt;-->
+<!--&lt;!&ndash;        <td>Marketing</td>&ndash;&gt;-->
+<!--&lt;!&ndash;        <td>16 Nov 2015</td>&ndash;&gt;-->
+<!--&lt;!&ndash;        <td>30 Nov 2017</td>&ndash;&gt;-->
+<!--&lt;!&ndash;        <td>kathy_82@example.com</td>&ndash;&gt;-->
+<!--&lt;!&ndash;        <td>26</td>&ndash;&gt;-->
+<!--&lt;!&ndash;        <td>New York City, NY</td>&ndash;&gt;-->
+<!--&lt;!&ndash;        <td>424242xxxxxx1616</td>&ndash;&gt;-->
+<!--&lt;!&ndash;      </tr>&ndash;&gt;-->
+<!--&lt;!&ndash;      <tr>&ndash;&gt;-->
+<!--&lt;!&ndash;        <td>CFO</td>&ndash;&gt;-->
+<!--&lt;!&ndash;        <td>16 Nov 2013</td>&ndash;&gt;-->
+<!--&lt;!&ndash;        <td>30 Nov 2017</td>&ndash;&gt;-->
+<!--&lt;!&ndash;        <td>elizabeth82@example.com</td>&ndash;&gt;-->
+<!--&lt;!&ndash;        <td>32</td>&ndash;&gt;-->
+<!--&lt;!&ndash;        <td>New York City, NY</td>&ndash;&gt;-->
+<!--&lt;!&ndash;        <td>424242xxxxxx5326</td>&ndash;&gt;-->
+<!--&lt;!&ndash;      </tr>&ndash;&gt;-->
+<!--&lt;!&ndash;      <tr>&ndash;&gt;-->
+<!--&lt;!&ndash;        <td>Designer</td>&ndash;&gt;-->
+<!--&lt;!&ndash;        <td>16 Nov 2013</td>&ndash;&gt;-->
+<!--&lt;!&ndash;        <td>30 Nov 2017</td>&ndash;&gt;-->
+<!--&lt;!&ndash;        <td>michael94@example.com</td>&ndash;&gt;-->
+<!--&lt;!&ndash;        <td>22</td>&ndash;&gt;-->
+<!--&lt;!&ndash;        <td>New York City, NY</td>&ndash;&gt;-->
+<!--&lt;!&ndash;        <td>424242xxxxxx6328</td>&ndash;&gt;-->
+<!--&lt;!&ndash;      </tr>&ndash;&gt;-->
+<!--&lt;!&ndash;      <tr>&ndash;&gt;-->
+<!--&lt;!&ndash;        <td>Developer</td>&ndash;&gt;-->
+<!--&lt;!&ndash;        <td>16 Nov 2017</td>&ndash;&gt;-->
+<!--&lt;!&ndash;        <td>30 Nov 2017</td>&ndash;&gt;-->
+<!--&lt;!&ndash;        <td>jasoncox@example.com</td>&ndash;&gt;-->
+<!--&lt;!&ndash;        <td>25</td>&ndash;&gt;-->
+<!--&lt;!&ndash;        <td>New York City, NY</td>&ndash;&gt;-->
+<!--&lt;!&ndash;        <td>424242xxxxxx7648</td>&ndash;&gt;-->
+<!--&lt;!&ndash;      </tr>&ndash;&gt;-->
+<!--&lt;!&ndash;      <tr>&ndash;&gt;-->
+<!--&lt;!&ndash;        <td>Sale</td>&ndash;&gt;-->
+<!--&lt;!&ndash;        <td>16 Nov 2016</td>&ndash;&gt;-->
+<!--&lt;!&ndash;        <td>30 Nov 2017</td>&ndash;&gt;-->
+<!--&lt;!&ndash;        <td>christian_83@example.com</td>&ndash;&gt;-->
+<!--&lt;!&ndash;        <td>28</td>&ndash;&gt;-->
+<!--&lt;!&ndash;        <td>New York City, NY</td>&ndash;&gt;-->
+<!--&lt;!&ndash;        <td>424242xxxxxx4152</td>&ndash;&gt;-->
+<!--&lt;!&ndash;      </tr>&ndash;&gt;-->
+<!--&lt;!&ndash;      <tr>&ndash;&gt;-->
+<!--&lt;!&ndash;        <td>Support</td>&ndash;&gt;-->
+<!--&lt;!&ndash;        <td>16 Nov 2013</td>&ndash;&gt;-->
+<!--&lt;!&ndash;        <td>30 Nov 2017</td>&ndash;&gt;-->
+<!--&lt;!&ndash;        <td>emily90@example.com</td>&ndash;&gt;-->
+<!--&lt;!&ndash;        <td>24</td>&ndash;&gt;-->
+<!--&lt;!&ndash;        <td>New York City, NY</td>&ndash;&gt;-->
+<!--&lt;!&ndash;        <td>424242xxxxxx6668</td>&ndash;&gt;-->
+<!--&lt;!&ndash;      </tr>&ndash;&gt;-->
+
+<!--      </tbody>-->
+
+<!--    </table>-->
+<!--    <pagination-controls (pageChange)="p = $event" style="margin-left: 55%;color: white"></pagination-controls>-->
   </div>
 </section>
 <!-- Modal -->
@@ -122,6 +195,6 @@
     </div>
   </div>
 </div>
-</body>
+<!--</body>-->
 
 

@@ -25,9 +25,9 @@ export class CreateCustomerComponent implements OnInit {
     this.customerForm = new FormGroup({
       customerName: new FormControl('', Validators.required),
       customerBirthday: new FormControl('', Validators.required),
-      customerGender: new FormControl('', Validators.required),
+      customerGender: new FormControl('1', Validators.required),
       customerIdCard: new FormControl('', Validators.required),
-      customerPhone: new FormControl('', [Validators.required, Validators.pattern('^\\+84\\d{9,10}$')]),
+      customerPhone: new FormControl('', [Validators.required, Validators.pattern('^090[0-9]\\d{6}$')]),
       customerEmail: new FormControl('', [Validators.required, Validators.email]),
       customerAddress: new FormControl('', Validators.required),
       customerType: new FormControl('', Validators.required),
@@ -47,20 +47,25 @@ export class CreateCustomerComponent implements OnInit {
   }
 
   createCustomer() {
-    if (this.customerForm.invalid) {
-      this.customerService.postProduct(this.customerForm.value).subscribe((response) => {
-          alert('OK');
-          this.router.navigateByUrl('/customer');
+    if (this.customerForm.valid) {
+      this.customerService.postCustomer(this.customerForm.value).subscribe((response) => {
+
+          // this.matSnackBar.open('Add new Customer Successfully', 'OK!');
+          this.openSnackBar('Add new Customer Successfully', 'OK');
+          this.router.navigateByUrl('/list-customer');
+
         },
         (error) => {
-          alert('Failed')
+          this.openSnackBar('Add new Customer Failed', 'OK!');
         })
     }
 
   }
 
   openSnackBar(message: string, action: string) {
-    this.matSnackBar.open(message, action);
+    this.matSnackBar.open(message, action, {
+      duration: 2000,
+    });
   }
 
   getAllCustomerType() {
@@ -82,7 +87,7 @@ export class CreateCustomerComponent implements OnInit {
         this.matSnackBar.open('Add new Customer Successfully', 'OK!');
       }
     );
-  this.router.navigate(['customer']);
+    this.router.navigate(['customer']);
   }
 
 

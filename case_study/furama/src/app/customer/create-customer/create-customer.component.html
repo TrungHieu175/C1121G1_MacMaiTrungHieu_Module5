@@ -1,4 +1,15 @@
-<div class="container-fluid-lg body">
+<br><br>
+<body>
+<mat-form-field appearance="fill" hidden>
+  <mat-label>Message</mat-label>
+  <input matInput value="Thêm mới thành công!" #message>
+</mat-form-field>
+
+<mat-form-field appearance="fill" hidden>
+  <mat-label>Action</mat-label>
+  <input matInput value="OK!" #action>
+</mat-form-field>
+<div class="container-fluid-lg">
   <div class="row">
     <div class="col-md-8 mx-auto">
       <div class="contact-form">
@@ -34,7 +45,7 @@
               </div>
               <div *ngIf="customerForm.get('customerPhone').invalid && customerForm.get('customerPhone').touched">
                 <span style="color: red" *ngIf="customerForm.get('customerPhone').errors.required">Không để trống </span>
-                <span style="color: red" *ngIf="customerForm.get('customerPhone').errors.pattern">Đầu số phải +84, và 9 đến 10 chữ số.</span>
+                <span style="color: red" *ngIf="customerForm.get('customerPhone').errors.pattern">Đầu số phải 090XXXXXXX.</span>
               </div>
             </div>
             <div class="col-sm-6">
@@ -48,8 +59,22 @@
             </div>
           </div>
           <div class="form-group">
-            <label for="inputGender">Gender<span style="color: red">*</span></label>
-            <input formControlName="customerGender" type="text" class="form-control" id="inputGender">
+            <label for="inputGender">Type<span style="color: red">*</span>Gender</label>
+            <select formControlName="customerGender"  class="form-control" id="inputGender">
+              <!--              <option selected>&#45;&#45;Chon&#45;&#45;</option>-->
+              <option value="0">Female</option>
+              <option value="1">Male</option>
+            </select>
+<!--            <label >Gender<span style="color: red">*</span></label>-->
+<!--            <input formControlName="customerGender" type="radio" >-->
+<!--            <input formControlName="customerGender" type="radio" >-->
+
+<!--            <label style="color: red">Select customer gender:</label>-->
+<!--            <input type="radio" id="female" value='0' formControlName="customerGender" class="form-control">-->
+<!--            <label for="female">Female</label><br>-->
+<!--            <input type="radio" id="male" value='1' formControlName="customerGender" class="form-control">-->
+<!--            <label for="male">Male</label>-->
+
             <div *ngIf="customerForm.get('customerGender').invalid && customerForm.get('customerGender').touched">
               <span style="color: red" *ngIf="customerForm.get('customerGender').errors.required">Không để trống </span>
             </div>
@@ -57,7 +82,7 @@
           <div class="form-group">
             <label for="inputType">Type<span style="color: red">*</span></label>
             <select formControlName="customerType"  class="form-control" id="inputType">
-<!--              <option selected>&#45;&#45;Chon&#45;&#45;</option>-->
+              <!--              <option selected>&#45;&#45;Chon&#45;&#45;</option>-->
               <option *ngFor="let type of customerType" [ngValue]="type" >{{type.customerTypeName}}</option>
             </select>
             <div *ngIf="customerForm.get('customerType').invalid && customerForm.get('customerType').touched">
@@ -79,7 +104,7 @@
             </div>
           </div>
           <div class="text-center">
-            <button (click)="openSnackBar(message.value, action.value)" [disabled]="!customerForm.valid" type="submit" class="btn btn-primary"><i class="fa fa-paper-plane"></i> Send</button>
+            <button  type="submit" class="btn btn-primary"><i class="fa fa-paper-plane"></i> Send</button>
           </div>
         </form>
       </div>
@@ -87,15 +112,7 @@
   </div>
 </div>
 
-<mat-form-field appearance="fill" hidden>
-  <mat-label>Message</mat-label>
-  <input matInput value="Thêm mới thành công!" #message>
-</mat-form-field>
-
-<mat-form-field appearance="fill" hidden>
-  <mat-label>Action</mat-label>
-  <input matInput value="OK!" #action>
-</mat-form-field>
+</body>
 
 
 

@@ -10,7 +10,12 @@ import {ICustomerType} from "../model/ICustomerType";
   providedIn: 'root'
 })
 export class CustomerService {
-
+  BACKEND_LIST = 'http://localhost:8080/api/list-customer'
+  BACKEND_DELETE = 'http://localhost:8080/api/customer/'
+  BACKEND_BY_ID = 'http://localhost:8080/api/get/'
+  BACKEND_CREATE = 'http://localhost:8080/api/create-customer'
+  BACKEND_UPDATE = 'http://localhost:8080/api/update-customer/'
+  BACKEND_LIST_TYPE = 'http://localhost:8080/api/list-customer-type'
   URL_LIST = 'http://localhost:3000/customer';
   URL_LIST_TYPE = 'http://localhost:3000/customerType';
   // private vip: CustomerType;
@@ -31,27 +36,41 @@ export class CustomerService {
   constructor(private http: HttpClient) {
   }
 
-  postProduct(data: any) {
-    return this.http.post<any>('http://localhost:3000/customer/', data);
+  postCustomer(data: any) {
+    console.log(data)
+    // return this.http.post<any>('http://localhost:3000/customer/', data);
+    return this.http.post<any>(this.BACKEND_CREATE,data);
   }
 
   getAllCustomer(): Observable<ICustomer[]> {
-    return this.http.get<ICustomer[]>(this.URL_LIST);
+    // return this.http.get<ICustomer[]>(this.URL_LIST);
+    return this.http.get<ICustomer[]>(this.BACKEND_LIST);
 
   }
 
   getAllCustomerType(): Observable<ICustomerType[]> {
-    return this.http.get<ICustomerType[]>(this.URL_LIST_TYPE);
+    // return this.http.get<ICustomerType[]>(this.URL_LIST_TYPE);
+    return this.http.get<ICustomerType[]>(this.BACKEND_LIST_TYPE);
   }
 
   getCreateCustomer(data) { // Add Customer
-    return this.http.post<ICustomer[]>(`${this.URL_LIST}`, data);
-  }
-  getCustomerById(id) { // findById Customer
-    return this.http.get<Customer>(`${this.URL_LIST}/${id}`);
+    // return this.http.post<ICustomer[]>(`${this.URL_LIST}`, data);
+    return this.http.post<ICustomer[]>(`${this.BACKEND_LIST}`, data);
   }
 
-  getDeleteCustomer(id) { // Delete Customer
-    return this.http.delete<Customer[]>(`${this.URL_LIST}/${id}`);
+  getCustomerById(id) { // findById Customer
+    // return this.http.get<Customer>(`${this.URL_LIST}/${id}`);
+    return this.http.get<Customer>(this.BACKEND_BY_ID + id);
+  }
+
+  deleteCustomer(id) { // Delete Customer
+    // return this.http.delete<any>(`${this.URL_LIST}/${id}`);
+    return this.http.delete<any>(this.BACKEND_DELETE + id);
+  }
+
+  updateCustomer(data: any) {
+    console.log(data);
+    // return this.http.put<any>(`http://localhost:3000/customer/${data.id}`, data);
+    return this.http.put<any>(this.BACKEND_UPDATE + data.id, data);
   }
 }

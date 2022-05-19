@@ -33,6 +33,10 @@ import {MatNativeDateModule} from "@angular/material/core";
 import {MatRadioModule} from "@angular/material/radio";
 import {MatTableModule} from "@angular/material/table";
 import {MatSortModule} from "@angular/material/sort";
+import {MatPaginatorModule} from "@angular/material/paginator";
+import { DialogComponent } from './customer/list-customer/dialog/dialog.component';
+import { DialogDeleteComponent } from './customer/list-customer/dialog-delete/dialog-delete.component';
+import { DialogCreateComponent } from './customer/list-customer/dialog-create/dialog-create.component';
 
 @NgModule({
   declarations: [
@@ -48,7 +52,10 @@ import {MatSortModule} from "@angular/material/sort";
     CreateContractComponent,
     ListContractComponent,
     ListServiceComponent,
-    DeleteCustomerComponent
+    DeleteCustomerComponent,
+    DialogComponent,
+    DialogDeleteComponent,
+    DialogCreateComponent
   ],
   imports: [
     BrowserModule,
@@ -73,6 +80,7 @@ import {MatSortModule} from "@angular/material/sort";
     FormsModule,
     MatTableModule,
     MatSortModule,
+    MatPaginatorModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
