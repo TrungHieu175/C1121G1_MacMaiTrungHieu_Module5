@@ -1,115 +1,118 @@
 import { Component, OnInit } from '@angular/core';
 import {FormBuilder, FormGroup, Validators} from "@angular/forms";
-import {MatDialogRef} from "@angular/material/dialog";
-import {BaiDangService} from "../../services/baiDang.service";
-import {ITrangThai} from "../../model/iTrangThai";
-import {MatSnackBar} from "@angular/material/snack-bar";
-import {TrangThaiService} from "../../services/trangThai.service";
+import {Router} from "@angular/router";
+import {BaiDangService} from "../../services/bai-dang.service";
+import {DanhMucService} from "../../services/danh-muc.service";
+import {DanhMuc} from "../../model/danhMuc";
 
 @Component({
-  selector: 'app-dialog-create',
-  templateUrl: './dialog-create.component.html',
-  styleUrls: ['./dialog-create.component.css']
+  selector: 'app-bai-dang-create',
+  templateUrl: './bai-dang-create.component.html',
+  styleUrls: ['./bai-dang-create.component.css']
 })
-export class DialogCreateComponent implements OnInit {
-
-  customerCreateForm !: FormGroup;
-  actionBtn: string = 'Save';
-  customerTypes !: ITrangThai[];
-  warningMessage: string;
-
-  compareFn(c1: ITrangThai, c2: ITrangThai): boolean {
-    return c1 && c2 ? c1.id == c2.id : c1 == c2;
-  };
+export class BaiDangCreateComponent implements OnInit {
+  baiDangForm: FormGroup;
+  danhMucs: DanhMuc[];
 
   constructor(private fb: FormBuilder,
-              private dialogRef: MatDialogRef<DialogCreateComponent>,
-              private customerTypeService: TrangThaiService,
-              private customerService: BaiDangService,
-              private matSnackBar: MatSnackBar) {
+              private baiDangService: BaiDangService,
+              private router: Router,
+              private danhMucService: DanhMucService,
+  ) {
+    this.getAllDanhMucs();
   }
 
   ngOnInit(): void {
-    this.getAllCustomerTypes();
-    this.customerCreateForm = this.fb.group({
-      customerCode: ["", [Validators.required]],
-      customerName: ["", Validators.required],
-      customerBirthday: ["", Validators.required],
-      customerGender: [""],
-      customerIdCard: ["", [Validators.required, Validators.pattern('^$|^\\d{9}$')]],
-      customerPhone: ["", [Validators.required]],
-      customerEmail: ["", [Validators.required]],
-      customerAddress: ["", Validators.required],
-      customerType: ["", Validators.required]
+    this.baiDangForm = this.fb.group({
+      tieuDe: ['', [Validators.required]],
+      danhMuc: [''],
+      vungMien: [''],
+      banLa: [''],
+      huong: [''],
+      tinhTrang: [''],
+      diaChi: ['', [Validators.required]],
+      dienTich: ['', [Validators.required]],
+      gia: ['', [Validators.required]],
+      noiDung: ['', [Validators.required]],
+      hinhAnh: [''],
     })
-
-
   }
 
-  get tuaDe() {
-    return this.customerCreateForm.get('customerCode');
+  get tieuDe() {
+    return this.baiDangForm.get('tieuDe');
   }
-
-  get banDangTin() {
-    return this.customerCreateForm.get('customerName');
-  }
-
-  get ngayDang() {
-    return this.customerCreateForm.get('customerBirthday');
-  }
-
-  get banLa() {
-    return this.customerCreateForm.get('customerGender');
-  }
-
-  get gia() {
-    return this.customerCreateForm.get('customerIdCard');
-  }
-
-  get dienTich() {
-    return this.customerCreateForm.get('customerPhone');
-  }
-
-  get customerEmail() {
-    return this.customerCreateForm.get('customerEmail');
-  }
-
   get danhMuc() {
-    return this.customerCreateForm.get('customerAddress');
+    return this.baiDangForm.get('danhMuc');
+  }
+  get vungMien() {
+    return this.baiDangForm.get('vungMien');
+  }
+  get banLa() {
+    return this.baiDangForm.get('banLa');
+  }
+  get huong() {
+    return this.baiDangForm.get('huong');
+  }
+  get tinhTrang() {
+    return this.baiDangForm.get('tinhTrang');
+  }
+  get diaChi() {
+    return this.baiDangForm.get('diaChi');
+  }
+  get dienTich() {
+    return this.baiDangForm.get('dienTich');
+  }
+  get gia() {
+    return this.baiDangForm.get('gia');
+  }
+  get noiDung() {
+    return this.baiDangForm.get('noiDung');
+  }
+  get hinhAnh() {
+    return this.baiDangForm.get('hinhAnh');
   }
 
-  get trangThai() {
-    return this.customerCreateForm.get('customerType');
-  }
 
-  getAllCustomerTypes() {
-    this.customerTypeService.getAllCustomerType().subscribe(
-      (response) => {
-        this.customerTypes = response;
+
+
+
+  themMoi() {
+    if (this.baiDangForm.valid){
+      console.log(this.baiDangForm.value);
+      this.baiDangService.postBaiDang(this.baiDangForm.value).subscribe(
+        (response)=>{
+          alert('OK');
+          this.router.navigateByUrl('/baiDang');
+        },
+        (error)=>{ alert('FAILED')}
+      )
+    } else {
+      console.log('a')
+      if (this.diaChi.value == '') {
+        this.diaChi.setErrors({empty: 'Vong long khong de trong!'})
       }
-    );
+      if (this.dienTich.value == '') {
+        this.dienTich.setErrors({empty: 'Vong long khong de trong!'})
+      }
+      if (this.tieuDe.value == '') {
+        this.tieuDe.setErrors({empty: 'Vong long khong de trong!'})
+      }
+      if (this.noiDung.value == '') {
+        this.noiDung.setErrors({empty: 'Vong long khong de trong!'})
+      }
+      if (this.gia.value == '') {
+        this.gia.setErrors({empty: 'Vong long khong de trong!'})
+      }
+      this.router.navigateByUrl('/baiDang/create');
+    }
+
   }
 
+  getAllDanhMucs(){
+    this.danhMucService.getAllDanhMucs().subscribe(
+      (response)=>{ this.danhMucs = response.data;},
+      (error)=>{ alert('FAILED')}
+    )
+  }
 
-  createCustomer() {
-    this.customerService.postCustomer(this.customerCreateForm.value).subscribe(
-      (response) => {
-        this.openSnackBar('Add new Successfully', 'OK');
-        this.customerCreateForm.reset();
-        this.dialogRef.close('update');
-      },
-      (error) => {
-        this.openSnackBar('Add new Failed', 'OK!');
-        if (!error.error.status) {
-          this.tuaDe.setErrors({existed: error.error.errorMap.customerCode});
-        } else {
-          this.warningMessage = 'Update Failed!'
-        }
-      })
-  }
-  openSnackBar(message: string, action: string) {
-    this.matSnackBar.open(message, action, {
-      duration: 2000,
-    });
-  }
 }

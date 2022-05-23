@@ -1,189 +1,120 @@
-<h1 mat-dialog-title>Favorite Animal</h1>
-<div mat-dialog-content>
-  <form [formGroup]="customerCreateForm">
-
-    <input formControlName="id" hidden>
-
-    <!--Danh mục-->
-
+<h1 mat-dialog-title style="color: darkblue; text-align: center; font-size: 60px; margin: 60px; font-family: fantasy">
+  Tao moi Bai Dang</h1>
+<div mat-dialog-content class="container">
+  <form [formGroup]="baiDangForm">
     <mat-form-field appearance="outline">
-      <mat-label>Danh mục</mat-label>
-      <input matInput placeholder="Address" formControlName="customerAddress">
-      <!--      <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>-->
+      <mat-label> Tieu de</mat-label>
+      <input matInput placeholder="Tieu de" formControlName="tieuDe">
+      <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
+      <mat-hint>Hint</mat-hint>
       <div
-        *ngIf="danhMuc.invalid && (danhMuc.dirty || danhMuc.touched) || danhMuc.errors?.empty">
-        <span *ngIf="danhMuc.errors.required || danhMuc.errors.empty" style="color: red">Empty! Input please!</span>
+        *ngIf="tieuDe.invalid && (tieuDe.dirty || tieuDe.touched) || tieuDe.errors?.empty">
+        <span *ngIf="tieuDe.errors.required || tieuDe.errors.empty" style="color: red"> Vui long khong de trong!</span>
       </div>
     </mat-form-field>
 
-    <!--Vùng miền-->
-
     <mat-form-field appearance="outline">
-      <mat-label>Vùng miền</mat-label>
-      <mat-select>
-        <mat-option value="Hà Nội" >Hà nội</mat-option>
-        <mat-option value="Đà Nẵng">Đà nẵng</mat-option>
-        <mat-option value="Huế">Huế</mat-option>
+      <mat-label> Danh muc</mat-label>
+      <mat-select placeholder="Danh muc" formControlName="danhMuc">
+        <mat-option *ngFor="let c of danhMucs" [value]="c.id">{{c.id}} - {{c.ten}}</mat-option>
       </mat-select>
-      <div
-        *ngIf="trangThai.invalid && (trangThai.dirty || trangThai.touched) || trangThai.errors?.empty">
-        <span *ngIf="trangThai.errors.required || trangThai.errors.empty" style="color: red">Please choose customer type!!</span>
-      </div>
     </mat-form-field>
 
-    <!--Bạn là-->
+    <mat-form-field appearance="outline">
+      <mat-label> Vung mien</mat-label>
+      <mat-select placeholder="Vung mien" formControlName="vungMien">
+        <mat-option *ngFor="let c of vungMiens" [value]="c.id">{{c.id}} - {{c.ten}}</mat-option>
+      </mat-select>
+    </mat-form-field>
+
+    <label id="example1"><h1 style="margin-top: 15px">Ban la</h1></label>
+    <mat-radio-group aria-labelledby="example-radio-group-label" class="example-radio-group"
+                     formControlName="banLa">
+      <mat-radio-button class="example-radio-button" [value]="0" style="margin-top: -15px">Ca nhan</mat-radio-button>
+      <mat-radio-button class="example-radio-button" [value]="1">Cong ty</mat-radio-button>
+    </mat-radio-group>
+    <!--    <label id="examplel"><h1 style="margin-top: 20px"> Ban la</h1></label>-->
+    <!--    <mat-radio-group aria-labelledby="example-radio-group-label" class="example-radio-group"  formControlName="banLa">-->
+    <!--      <mat-radio-button class="example-radio-button" *ngFor="let f of freshnessList" [value]="f">-->
+    <!--        {{f}}-->
+    <!--      </mat-radio-button>-->
+    <!--    </mat-radio-group>-->
+
+    <mat-form-field appearance="outline">
+      <mat-label> Huong</mat-label>
+      <mat-select placeholder="Category" formControlName="huong">
+        <mat-option *ngFor="let c of huongs" [value]="c.id">{{c.id}} - {{c.ten}}</mat-option>
+      </mat-select>
+    </mat-form-field>
 
 
-    <mat-radio-group aria-labelledby="example-radio-group-label3" class="example-radio-group"
-                     formControlName="customerGender">
-      <span>Bạn là :
-        <mat-radio-button class="example-radio-button" value="0">Cá nhân</mat-radio-button>
-      <mat-radio-button class="example-radio-button" value="1">Công ty</mat-radio-button>
-      </span>
-      <div
-        *ngIf="banLa.invalid && (banLa.dirty || banLa.touched) || ngayDang.errors?.empty">
-        <span *ngIf="banLa.errors?.required || banLa.errors?.empty" style="color: red">Please choose customer gender!</span>
-      </div>
+    <label id="example2"><h1 style="margin-top: 15px">Tinh trang</h1></label>
+    <mat-radio-group aria-labelledby="example-radio-group-label" class="example-radio-group"
+                     formControlName="tinhTrang">
+      <mat-radio-button class="example-radio-button" [value]="0" style="margin-top: -15px">Moi</mat-radio-button>
+      <mat-radio-button class="example-radio-button" [value]="1">Da su dung</mat-radio-button>
     </mat-radio-group>
 
-    <!--Bạn đăng tin-->
-
     <mat-form-field appearance="outline">
-      <mat-label>Bạn đăng tin <span style="color: red">(*)</span></mat-label>
-      <input type="text" matInput formControlName="customerName">
-      <!--      <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>-->
+      <mat-label> Dia chi</mat-label>
+      <textarea matInput placeholder="Comment" formControlName="diaChi"></textarea>
+      <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
+      <mat-hint>Hint</mat-hint>
       <div
-        *ngIf="banDangTin.invalid && (banDangTin.dirty || banDangTin.touched) || banDangTin.errors?.empty">
-        <span *ngIf="banDangTin.errors.required || banDangTin.errors.empty"
-              style="color: red">Empty! Input please!</span>
-      </div>
-    </mat-form-field>
-    <!--Tình trạng-->
-
-
-    <mat-radio-group aria-labelledby="example-radio-group-label3" class="example-radio-group">
-      <span>Tình trạng :
-        <mat-radio-button class="example-radio-button" value="0" style="margin-top: -15px">Mới</mat-radio-button>
-      <mat-radio-button class="example-radio-button" value="1">Đã sử dụng</mat-radio-button>
-      </span>
-      <div
-        *ngIf="banLa.invalid && (banLa.dirty || banLa.touched) || ngayDang.errors?.empty">
-        <span *ngIf="banLa.errors?.required || banLa.errors?.empty" style="color: red">Please choose customer gender!</span>
-      </div>
-    </mat-radio-group>
-
-    <!--Địa chỉ-->
-
-    <mat-form-field appearance="outline">
-      <mat-label>Địa chỉ <span style="color: red">(*)</span></mat-label>
-      <input matInput placeholder="Address">
-      <!--      <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>-->
-      <div
-        *ngIf="danhMuc.invalid && (danhMuc.dirty || danhMuc.touched) || danhMuc.errors?.empty">
-        <span *ngIf="danhMuc.errors.required || danhMuc.errors.empty" style="color: red">Empty! Input please!</span>
+        *ngIf="diaChi.invalid && (diaChi.dirty || diaChi.touched) || diaChi.errors?.empty">
+        <span *ngIf="diaChi.errors.required || diaChi.errors.empty" style="color: red"> Vui long khong de trong!</span>
       </div>
     </mat-form-field>
 
-    <!--Diện tích-->
-
     <mat-form-field appearance="outline">
-      <mat-label>Diện tích <span style="color: red">(*)</span></mat-label>
-      <input type="number" matInput placeholder="m2" formControlName="customerPhone">
-      <!--      <mat-icon aria-hidden="false" aria-label="Example home icon" matSuffix>sentiment_very_satisfied</mat-icon>-->
+      <mat-label> Dien tich</mat-label>
+      <input matInput placeholder="Price" formControlName="dienTich" type="number">
+      <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
+      <mat-hint>Hint</mat-hint>
       <div
         *ngIf="dienTich.invalid && (dienTich.dirty || dienTich.touched) || dienTich.errors?.empty">
-        <span *ngIf="dienTich.errors.required || dienTich.errors.empty" style="color: red">Empty! Input please!</span>
+                    <span *ngIf="dienTich.errors?.gte"
+                          style="color: red">{{dienTich.errors?.requiredValue}}</span><br>
+        <span *ngIf="dienTich.errors.required || dienTich.errors.empty" style="color: red">Vui long khong de trong!</span>
       </div>
     </mat-form-field>
 
-    <!--Hướng-->
-
     <mat-form-field appearance="outline">
-      <mat-label>Hướng</mat-label>
-      <mat-select formControlName="customerEmail" >
-        <mat-option value="Đông">Đông</mat-option>
-        <mat-option value="Tây">Tây</mat-option>
-        <mat-option value="Nam">Nam</mat-option>
-        <mat-option value="Bắc">Bắc</mat-option>
-      </mat-select>
-      <div
-        *ngIf="customerEmail.invalid && (customerEmail.dirty || customerEmail.touched) || customerEmail.errors?.empty">
-        <span *ngIf="customerEmail.errors.required || customerEmail.errors.empty" style="color: red">Empty! Input please!</span>
-      </div>
-    </mat-form-field>
-
-    <!--Tựa đề-->
-
-    <mat-form-field appearance="outline">
-      <mat-label>Tựa đề <span style="color: red">(*)</span></mat-label>
-      <input type="text" matInput formControlName="customerCode">
-      <!--      <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>-->
-      <div
-        *ngIf="tuaDe.invalid && (tuaDe.dirty || tuaDe.touched) || tuaDe.errors?.empty">
-        <span *ngIf="tuaDe.errors.required || tuaDe.errors.empty"
-              style="color: red">Empty! Input please!</span>
-      </div>
-    </mat-form-field>
-
-    <!--Nội dung-->
-
-    <mat-form-field appearance="outline">
-      <mat-label>Nội dung <span style="color: red">(*)</span></mat-label>
-      <input type="text" matInput>
-      <!--      <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>-->
-      <div
-        *ngIf="banDangTin.invalid && (banDangTin.dirty || banDangTin.touched) || banDangTin.errors?.empty">
-        <span *ngIf="banDangTin.errors.required || banDangTin.errors.empty"
-              style="color: red">Empty! Input please!</span>
-      </div>
-    </mat-form-field>
-
-    <!--Diện tích-->
-
-    <mat-form-field appearance="outline">
-      <mat-label>Giá <span style="color: red">(*)</span></mat-label>
-      <input type="number" matInput formControlName="customerIdCard">
-      <!--      <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>-->
+      <mat-label> Gia</mat-label>
+      <input matInput placeholder="Price" formControlName="gia" type="number">
+      <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
+      <mat-hint>Hint</mat-hint>
       <div
         *ngIf="gia.invalid && (gia.dirty || gia.touched) || gia.errors?.empty">
-        <span *ngIf="gia.errors.pattern" style="color: red">Wrong format, ex: XXXXXXXXX(9)</span>
-        <span *ngIf="gia.errors.required || gia.errors.empty" style="color: red">Empty! Input please!</span>
-      </div>
-    </mat-form-field>
-    <input type="checkbox"> Giá có thể thỏa thuận
-
-
-    <mat-form-field appearance="fill">
-      <mat-label>Ngày đăng</mat-label>
-      <input matInput [matDatepicker]="picker" formControlName="customerBirthday">
-      <mat-hint>MM/DD/YYYY</mat-hint>
-      <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
-      <mat-datepicker #picker></mat-datepicker>
-      <div
-        *ngIf="ngayDang.invalid && (ngayDang.dirty || ngayDang.touched) || ngayDang.errors?.empty">
-        <span *ngIf="ngayDang.errors.required || ngayDang.errors.empty" style="color: red">Please choose a date!</span>
+                    <span *ngIf="gia.errors?.gte"
+                          style="color: red"> {{gia.errors?.requiredValue}}</span><br>
+        <span *ngIf="gia.errors.required || gia.errors.empty" style="color: red"> Vui long khong de trong!</span>
       </div>
     </mat-form-field>
 
     <mat-form-field appearance="outline">
-      <mat-label>Trạng Thái</mat-label>
-      <mat-select formControlName="customerType" [compareWith]="compareFn">
-        <mat-option *ngFor="let c of customerTypes" [value]="c">{{c.id}}
-          - {{c.customerTypeName}}</mat-option>
-      </mat-select>
+      <mat-label> Noi dung</mat-label>
+      <input matInput placeholder="Price" formControlName="noiDung">
+      <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
+      <mat-hint>Hint</mat-hint>
       <div
-        *ngIf="trangThai.invalid && (trangThai.dirty || trangThai.touched) || trangThai.errors?.empty">
-        <span *ngIf="trangThai.errors.required || trangThai.errors.empty" style="color: red">Please choose customer type!!</span>
+        *ngIf="noiDung.invalid && (noiDung.dirty || noiDung.touched) || noiDung.errors?.empty">
+        <span *ngIf="noiDung.errors.required || noiDung.errors.empty" style="color: red"> Vui long khong de trong!</span>
       </div>
+    </mat-form-field>
+
+    <mat-form-field appearance="outline">
+      <mat-label> Hinh anh</mat-label>
+      <input matInput placeholder="Price" formControlName="hinhAnh">
+      <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
+      <mat-hint>Hint</mat-hint>
     </mat-form-field>
 
   </form>
 </div>
-<div style="color: red; text-align: center">{{warningMessage}}</div>
-<div mat-dialog-actions [align]="'end'">
-  <button mat-raised-button color="warn" mat-dialog-close>Close</button>
-  <button mat-raised-button color="primary" (click)="createCustomer()">Create
-  </button>
+<div mat-dialog-actions style="display: flex; justify-content: center">
+  <button mat-raised-button color="warn" routerLink="/baiDang">Back</button>
+  <button mat-raised-button color="primary" (click)="themMoi()">Luu thay doi</button>
 </div>
 
 

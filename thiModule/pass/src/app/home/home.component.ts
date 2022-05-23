@@ -1,83 +1,113 @@
 import {Component, OnInit, ViewChild} from '@angular/core';
-import {MatSort} from "@angular/material/sort";
 import {MatDialog} from "@angular/material/dialog";
-import {DialogCreateComponent} from "./dialog-create/dialog-create.component";
-import {MatPaginator} from "@angular/material/paginator";
-import {MatSnackBar} from "@angular/material/snack-bar";
-import {MatTableDataSource} from "@angular/material/table";
-import {DialogDeleteComponent} from "./dialog-delete/dialog-delete.component";
-import {DialogUpdateComponent} from "./dialog-update/dialog-update.component";
-import {BaiDangService} from "../services/baiDang.service";
-
+import {DanhMucService} from "../services/danh-muc.service";
+import {BaiDangService} from "../services/bai-dang.service";
+import {FormBuilder, FormGroup} from "@angular/forms";
+import {BaiDang} from "../model/baiDang";
+import {BaiDangUpdateComponent} from "./dialog-update/dialog-update.component";
+import {BaiDangDeleteComponent} from "./dialog-delete/dialog-delete.component";
 @Component({
-  selector: 'app-home',
-  templateUrl: './home.component.html',
-  styleUrls: ['./home.component.css']
+  selector: 'app-bai-dang',
+  templateUrl: './bai-dang.component.html',
+  styleUrls: ['./bai-dang.component.css']
 })
-export class HomeComponent implements OnInit {
-  p: number = 1;
-  dataSource !: MatTableDataSource<any>;
-  displayedColumns: string[] = ['id', 'customerCode', 'customerName', 'customerBirthday', 'customerGender', 'customerIdCard', 'customerPhone', 'actions'];
-  @ViewChild(MatPaginator) paginator !: MatPaginator;
-  @ViewChild(MatSort) sort !: MatSort;
+export class BaiDangComponent implements OnInit {
+  baiDangList: BaiDang[] = [];
+  searchForm: FormGroup;
+  pageNumber: number = 0;
+  first: boolean = true;
+  totalPages: any;
+  last: boolean;
+  sortValue: string = '';
+  constructor(public dialog: MatDialog,
+              private danhMucService: DanhMucService,
+              private baiDangService: BaiDangService,
+              private fb: FormBuilder) {
 
-  constructor(
-    private customerService: BaiDangService,
-    private dialog: MatDialog,
-    private matSnackBar: MatSnackBar) {
+
   }
 
   ngOnInit(): void {
-    this.getAll();
-
-  }
-
-  getAll() {
-    this.customerService.getAllCustomer().subscribe(data => {
-      this.dataSource = new MatTableDataSource<any>(data);
-      this.dataSource.paginator = this.paginator;
-      this.dataSource.sort = this.sort;
+    this.getAllBaiDangs('','','', '');
+    this.searchForm = this.fb.group({
+      giaSearch: ['']
     })
   }
 
-  applyFilter(event: Event) {
-    const filterValue = (event.target as HTMLInputElement).value;
-    this.dataSource.filter = filterValue.trim().toLowerCase();
+  getAllBaiDangs(dienTich: string, gia: string, huong: string, sort: string) {
+    this.baiDangService.getAllBaiDangs(this.pageNumber,dienTich,gia,huong, sort).subscribe(
+      (response) => {
+        this.first = response.first;
+        this.totalPages = response.totalPages;
+        this.totalPages = Array(this.totalPages).fill(1).map((x, i) => i + 1); //[1, 2, 3, 4, 5]
+        this.last = (response.pageable.offset + response.pageable.pageSize) >= response.totalElements;
+        this.baiDangList = response.content;
+      },
+      (error) => {
+        alert('FAILED');
+      },
+    )
+  }
 
-    if (this.dataSource.paginator) {
-      this.dataSource.paginator.firstPage();
+  search() {
+    if (isNaN(this.searchForm.value.dienTichSearch) || this.searchForm.value.dienTichSearch.trim == '') {
+      this.searchForm.get('dienTichSearch').setErrors({number: 'Ban phai nhap so!'})
     }
+    if (isNaN(this.searchForm.value.huongSearch) || this.searchForm.value.huongSearch.trim == '') {
+      this.searchForm.get('huongSearch').setErrors({number: 'Ban phai nhap so!'})
+    }
+    if (isNaN(this.searchForm.value.giaSearch) || this.searchForm.value.giaSearch.trim == '') {
+      this.searchForm.get('giaSearch').setErrors({number: 'Ban phai nhap so!'})
+    }
+    this.getAllBaiDangs(this.searchForm.value.dienTichSearch,this.searchForm.value.giaSearch,this.searchForm.value.huongSearch, '')
   }
 
-  updateCustomer(row: any) {
-    this.dialog.open(DialogUpdateComponent, {
+  updateBaiDang(row: any) {
+    this.dialog.open(BaiDangUpdateComponent, {
       width: '60%',
       data: row
-    }).afterClosed().subscribe((response) => {
-      this.getAll();
-    });
+    }).afterClosed().subscribe(value => {
+      if (value === 'update') {
+        this.getAllBaiDangs('','','','');
+      }
+    })
   }
 
-  createCustomer() {
-    this.dialog.open(DialogCreateComponent, {
-      width: '60%',
-    }).afterClosed().subscribe((response) => {
-      this.getAll();
-    });
-  }
-
-  openSnackBar(message: string, action: string) {
-    this.matSnackBar.open(message, action, {
-      duration: 2000,
-    });
-  }
-
-  deleteCustomer(row: any) {
-    this.dialog.open(DialogDeleteComponent, {
+  deleteBaiDang(row: any) {
+    this.dialog.open(BaiDangDeleteComponent, {
       width: '60%',
       data: row
-    }).afterClosed().subscribe((response) => {
-      this.getAll();
-    });
+    }).afterClosed().subscribe(value => {
+      if (value === 'close') {
+        this.getAllBaiDangs('','','','');
+      }
+    })
+  }
+
+  next() {
+    this.pageNumber++;
+    this.getAllBaiDangs(this.searchForm.value.dienTichSearch,this.searchForm.value.giaSearch,this.searchForm.value.huongSearch,this.sortValue)
+  }
+
+  previous() {
+    this.pageNumber--;
+    this.getAllBaiDangs(this.searchForm.value.dienTichSearch,this.searchForm.value.giaSearch,this.searchForm.value.huongSearch,this.sortValue)
+  }
+
+  getBaiDangPaging(index: any) {
+    this.pageNumber = index - 1;
+    this.getAllBaiDangs(this.searchForm.value.dienTichSearch,this.searchForm.value.giaSearch,this.searchForm.value.huongSearch,this.sortValue)
+  }
+
+  refresh() {
+    this.searchForm.reset();
+    this.ngOnInit();
+  }
+
+
+  sort(value: string) {
+    this.sortValue = value
+    this.getAllBaiDangs(this.searchForm.value.dienTichSearch,this.searchForm.value.giaSearch,this.searchForm.value.huongSearch,this.sortValue)
+
   }
 }
