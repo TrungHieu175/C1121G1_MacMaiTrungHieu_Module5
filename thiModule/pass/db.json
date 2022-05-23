@@ -1,0 +1,104 @@
+{
+  "customer": [
+    {
+      "id": 2,
+      "customerCode": "Cần bán 1...",
+      "customerName": "Cần bán",
+      "customerBirthday": "1992-08-08",
+      "customerGender": "0",
+      "customerIdCard": "865342123",
+      "customerPhone": "0954678909",
+      "customerEmail": "Đông",
+      "customerAddress": "Nhà đất",
+      "customerType": {
+        "id": 1,
+        "customerTypeName": "Đang rao"
+      }
+    },
+    {
+      "id": 3,
+      "customerCode": "Cần bán 1...",
+      "customerName": "Cần bán",
+      "customerBirthday": "1992-08-08",
+      "customerGender": "0",
+      "customerIdCard": "865342123",
+      "customerPhone": "0954678909",
+      "customerEmail": "Tây",
+      "customerAddress": "Nhà bè",
+      "customerType": {
+        "id": 2,
+        "customerTypeName": "Chưa duyệt"
+      }
+    },
+    {
+      "customerCode": "ádasd",
+      "customerName": "sadasd",
+      "customerBirthday": "2022-05-13T17:00:00.000Z",
+      "customerGender": "0",
+      "customerIdCard": "",
+      "customerPhone": "",
+      "customerEmail": "",
+      "customerAddress": "ádsad",
+      "customerType": {
+        "id": 1,
+        "customerTypeName": "Đang rao"
+      },
+      "id": 3
+    },
+    {
+      "customerCode": "ádasdas",
+      "customerName": "sadasd",
+      "customerBirthday": "2022-05-11T17:00:00.000Z",
+      "customerGender": "0",
+      "customerIdCard": 124125151,
+      "customerPhone": 123123,
+      "customerEmail": "Đông",
+      "customerAddress": "xzczxc",
+      "customerType": {
+        "id": 2,
+        "customerTypeName": "Chưa duyệt"
+      },
+      "id": 4
+    },
+    {
+      "customerCode": "dfdsfdsf",
+      "customerName": "sadasd",
+      "customerBirthday": "2022-05-10T17:00:00.000Z",
+      "customerGender": "0",
+      "customerIdCard": 242432325,
+      "customerPhone": 123123,
+      "customerEmail": "Đông",
+      "customerAddress": "ứadasd",
+      "customerType": {
+        "id": 2,
+        "customerTypeName": "Chưa duyệt"
+      },
+      "id": 5
+    },
+    {
+      "customerCode": "ádasdas",
+      "customerName": "áa",
+      "customerBirthday": "2022-05-11T17:00:00.000Z",
+      "customerGender": "0",
+      "customerIdCard": 231412155,
+      "customerPhone": 123123,
+      "customerEmail": "Đông",
+      "customerAddress": "sadas",
+      "customerType": {
+        "id": 2,
+        "customerTypeName": "Chưa duyệt"
+      },
+      "id": 6
+    }
+  ],
+  "customerType": [
+    {
+      "id": 1,
+      "customerTypeName": "Đang rao"
+    },
+    {
+      "id": 2,
+      "customerTypeName": "Chưa duyệt"
+    }
+  ]
+}
