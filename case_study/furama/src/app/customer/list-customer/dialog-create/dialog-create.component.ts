@@ -24,7 +24,7 @@ export class DialogCreateComponent implements OnInit {
   };
 
   constructor(private fb: FormBuilder,
-              private dialogRef: MatDialogRef<DialogComponent>,
+              private dialogRef: MatDialogRef<DialogCreateComponent>,
               private customerTypeService: CustomerTypeService,
               private customerService: CustomerService,
               private matSnackBar: MatSnackBar) {
@@ -97,7 +97,7 @@ export class DialogCreateComponent implements OnInit {
       (response) => {
         this.openSnackBar('Add new Customer Successfully', 'OK');
         this.customerCreateForm.reset();
-        this.dialogRef.close('update');
+        this.dialogRef.close('create');
       },
       (error) => {
         this.openSnackBar('Add new Customer Failed', 'OK!');

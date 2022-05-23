@@ -18,9 +18,7 @@ import {MatSnackBar} from "@angular/material/snack-bar";
   styleUrls: ['./list-customer.component.css']
 })
 export class ListCustomerComponent implements OnInit {
-  customerList: ICustomer[];
   p: number = 1;
-  customerRoot: Customer;
   dataSource: MatTableDataSource<any>;
   displayedColumns: string[] = ['id', 'customerCode', 'customerName', 'customerBirthday', 'customerGender', 'customerIdCard', 'customerPhone', 'actions'];
   @ViewChild(MatPaginator) paginator!: MatPaginator;

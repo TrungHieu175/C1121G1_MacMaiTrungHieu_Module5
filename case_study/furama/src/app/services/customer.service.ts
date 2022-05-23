@@ -38,7 +38,7 @@ export class CustomerService {
 
   postCustomer(data: any) {
     console.log(data)
-    // return this.http.post<any>('http://localhost:3000/customer/', data);
+    // return this.http.post<any>(this.URL_LIST, data);
     return this.http.post<any>(this.BACKEND_CREATE,data);
   }
 
